@@ -20,7 +20,7 @@ For more details, the code is available at~\url{https://github.com/ucbdrive/few-
 Following the previous work~\cite{kang2019few,yan2019meta,wang2019meta}, we 
 first evaluate our approach on COCO, using the same data splits and training examples provided by ~\citet{kang2019few}.
 % \footnote{code and data at \url{https://github.com/bingykang/Fewshot_Detection}}. 
-For COCO, the 60 categories are used as base classes while the remaining 20 classes are used as novel classes with $K=10, 30$.  For evaluation metrics, the COCO-style AP of the novel classes is used on COCO. 
+For COCO, the 60 categoriesare used as base classes while the remaining 20 classes are used as novel classes with $K=10, 30$.  For evaluation metrics, the COCO-style AP of the novel classes is used on COCO. 
 % On PASCAL VOC, we use the train/val sets in VOC 2007 and 2012 for training and the VOC 2007 test set for evaluation.
 % To construct the few-shot setting, we randomly split the 20 object categories into 15 as the base categories and the remaining 5 as the novel categories, and we evaluate on three different random splits.
 % On COCO, we use 5k images from the validation set for evaluation and the remaining images from the train/val sets for training.
@@ -235,14 +235,16 @@ On COCO, we provide results on 1, 2, 3, and 5 shots in addition to the 10 and 30
 	\setlength{\tabcolsep}{0.1em}
 	\adjustbox{width=.95\linewidth}{
 		\begin{tabular}{ccccccc}
-			\multirow{2}{*}{\rotatebox{90}{COCO}} &
+			\multirow{3}{*}{\rotatebox{90}{COCO}} &
 			\rotatebox{90}{\hspace{4mm}Success} &
-			\includegraphics[width=1in]{figs/coco_bird_a.pdf} & \includegraphics[width=1in]{figs/coco_cat_a.pdf} & \includegraphics[width=1in]{figs/coco_dog_a.pdf} & \includegraphics[width=1in]{figs/coco_train_a.pdf} & \includegraphics[width=1in]{figs/coco_bottle_a.pdf} \\
+			\includegraphics[width=1in]{figs/correct/clock_res.jpg} & \includegraphics[width=1in]{figs/correct/miao_res.jpg} & \includegraphics[width=1in]{figs/correct/sjd_res.jpg}\\
+			& \rotatebox{90}{\hspace{4mm}Partial} &
+			\includegraphics[width=1in]{figs/partial/bird_res.jpg} & \includegraphics[width=1in]{figs/partial/fruit_res.jpg} & \includegraphics[width=1in]{figs/partial/horse_res.jpg}\\
 			& \rotatebox{90}{\hspace{4mm}Failure} &
-			\includegraphics[width=1in]{figs/coco_bird_b.pdf} & \includegraphics[width=1in]{figs/coco_cat_b.pdf} & \includegraphics[width=1in]{figs/coco_dog_b.pdf} & \includegraphics[width=1in]{figs/coco_train_b.pdf} & \includegraphics[width=1in]{figs/coco_bottle_b.pdf} \\
+			\includegraphics[width=1in]{figs/wrong/cat_dog_res.jpg} & \includegraphics[width=1in]{figs/wrong/many_dogs_res.jpg} & \includegraphics[width=1in]{figs/wrong/three_cat_res.jpg}\\
 	\end{tabular}}
 % 	\caption{Detection results of our approach on novel classes (bird, bus, cow, sofa, and motorbike) from PASCAL VOC. We show success cases (green boxes) in the top row and failure cases (red boxes) in the bottom row. \vspace{1mm}}
-    \caption{Success (green boxes) and failure (red boxes) cases of our approach on novel classes from COCO (bird, cat, dog, train, and bottle). The black boxes are detected objects of irrelevant classes, which can be ignored. \vspace{1mm}}
+    \caption{Success partial and failure cases of our approach on novel classes from COCO. The black boxes are detected objects of irrelevant classes, which can be ignored. \vspace{1mm}}
     \label{fig:det-vis}
 \end{figure*}}
 

@@ -77,19 +77,20 @@
 \newlabel{tab:main_coco}{{1}{5}{{Few-shot detection performance for the novel categories on the COCO dataset.} Our approach consistently outperforms baseline methods across all shots and metrics.\vspace {2mm}}{table.1}{}}
 \newlabel{sec:revised_bench}{{4.2}{5}{}{subsection.4.2}{}}
 \newlabel{sec:vis}{{4.3}{5}{}{subsection.4.3}{}}
-\newlabel{tab:lvis_bench}{{2}{6}{Generalized object detection benchmarks on LVIS. We compare our approach to the baselines provided in LVIS~\cite {gupta2019lvis}. Our approach outperforms the corresponding baseline across all metrics, backbones, and sampling schemes. \vspace {1mm}}{table.2}{}}
-\newlabel{fig:coco_bench}{{3}{6}{Generalized object detection benchmarks on COCO. For each metric, we report the average and 95\% confidence interval computed over 10 random samples}{figure.3}{}}
-\newlabel{fig:det-vis}{{4}{6}{Success (green boxes) and failure (red boxes) cases of our approach on novel classes from COCO (bird, cat, dog, train, and bottle). The black boxes are detected objects of irrelevant classes, which can be ignored. \vspace {1mm}}{figure.4}{}}
-\newlabel{tab:weight_init}{{3}{6}{Ablation of weight initialization of the novel classifier. \vspace {2mm}}{table.3}{}}
 \bibstyle{icml2020}
 \bibdata{references}
 \bibcite{chen2019closer}{{1}{2019}{{Chen et~al.}}{{Chen, Liu, Kira, Wang, and Huang}}}
 \bibcite{dhillon2019baseline}{{2}{2019}{{Dhillon et~al.}}{{Dhillon, Chaudhari, Ravichandran, and Soatto}}}
+\newlabel{tab:lvis_bench}{{2}{6}{Generalized object detection benchmarks on LVIS. We compare our approach to the baselines provided in LVIS~\cite {gupta2019lvis}. Our approach outperforms the corresponding baseline across all metrics, backbones, and sampling schemes. \vspace {1mm}}{table.2}{}}
+\newlabel{fig:coco_bench}{{3}{6}{Generalized object detection benchmarks on COCO. For each metric, we report the average and 95\% confidence interval computed over 10 random samples}{figure.3}{}}
+\newlabel{tab:weight_init}{{3}{6}{Ablation of weight initialization of the novel classifier. \vspace {2mm}}{table.3}{}}
+\newlabel{tab:cos_scale}{{4}{6}{Ablation of scaling factor of cosine similarity. \vspace {1mm}}{table.4}{}}
 \bibcite{finn2017model}{{3}{2017}{{Finn et~al.}}{{Finn, Abbeel, and Levine}}}
 \bibcite{gidaris2018dynamic}{{4}{2018}{{Gidaris \& Komodakis}}{{Gidaris and Komodakis}}}
 \bibcite{gupta2019lvis}{{5}{2019}{{Gupta et~al.}}{{Gupta, Dollar, and Girshick}}}
 \bibcite{hariharan2017low}{{6}{2017}{{Hariharan \& Girshick}}{{Hariharan and Girshick}}}
 \bibcite{he2016deep}{{7}{2016}{{He et~al.}}{{He, Zhang, Ren, and Sun}}}
+\newlabel{fig:det-vis}{{4}{7}{Success partial and failure cases of our approach on novel classes from COCO. The black boxes are detected objects of irrelevant classes, which can be ignored. \vspace {1mm}}{figure.4}{}}
 \bibcite{kang2019few}{{8}{2019}{{Kang et~al.}}{{Kang, Liu, Wang, Yu, Feng, and Darrell}}}
 \bibcite{koch2015siamese}{{9}{2015}{{Koch}}{{}}}
 \bibcite{landau1988importance}{{10}{1988}{{Landau et~al.}}{{Landau, Smith, and Jones}}}
@@ -103,7 +104,6 @@
 \bibcite{simonyan2014very}{{18}{2014}{{Simonyan \& Zisserman}}{{Simonyan and Zisserman}}}
 \bibcite{smith2002object}{{19}{2002}{{Smith et~al.}}{{Smith, Jones, Landau, Gershkoff-Stowe, and Samuelson}}}
 \bibcite{snell2017prototypical}{{20}{2017}{{Snell et~al.}}{{Snell, Swersky, and Zemel}}}
-\newlabel{tab:cos_scale}{{4}{7}{Ablation of scaling factor of cosine similarity. \vspace {1mm}}{table.4}{}}
 \bibcite{vinyals2016matching}{{21}{2016}{{Vinyals et~al.}}{{Vinyals, Blundell, Lillicrap, Wierstra, et~al.}}}
 \bibcite{wang2019tafe}{{22}{2019{a}}{{Wang et~al.}}{{Wang, Yu, Wang, Darrell, and Gonzalez}}}
 \bibcite{wang2019meta}{{23}{2019{b}}{{Wang et~al.}}{{Wang, Ramanan, and Hebert}}}
@@ -123,7 +123,7 @@
 \citation{kang2019few}
 \citation{kang2019few}
 \citation{kang2019few,yan2019meta,wang2019meta}
-\newlabel{tab:voc_bench}{{5}{9}{Generalized object detection benchmarks on PASCAL VOC. For each metric, we report the average and 95\% confidence interval computed over 30 random samples. \vspace {1mm}}{table.5}{}}
-\newlabel{tab:coco_bench}{{6}{10}{Generalized object detection benchmarks on COCO. For each metric, we report the average and 95\% confidence interval computed over 10 random samples. \vspace {1mm}}{table.6}{}}
-\newlabel{fig:avg-ap-sup}{{5}{10}{Cumulative means with 95\% confidence intervals across 40 repeated runs, computed on the novel classes of all three splits of PASCAL VOC. The means and variances become stable after around 30 runs}{figure.5}{}}
-\newlabel{fig:coco-avg-ap-sup}{{6}{10}{Cumulative means with 95\% confidence intervals across 10 repeated runs, computed on the novel classes of COCO}{figure.6}{}}
+\newlabel{tab:voc_bench}{{5}{10}{Generalized object detection benchmarks on PASCAL VOC. For each metric, we report the average and 95\% confidence interval computed over 30 random samples. \vspace {1mm}}{table.5}{}}
+\newlabel{tab:coco_bench}{{6}{11}{Generalized object detection benchmarks on COCO. For each metric, we report the average and 95\% confidence interval computed over 10 random samples. \vspace {1mm}}{table.6}{}}
+\newlabel{fig:avg-ap-sup}{{5}{11}{Cumulative means with 95\% confidence intervals across 40 repeated runs, computed on the novel classes of all three splits of PASCAL VOC. The means and variances become stable after around 30 runs}{figure.5}{}}
+\newlabel{fig:coco-avg-ap-sup}{{6}{11}{Cumulative means with 95\% confidence intervals across 10 repeated runs, computed on the novel classes of COCO}{figure.6}{}}
