@@ -36,8 +36,8 @@ FRCN+ft-full (Our Impl.) &  & 15.2 & 20.3 & 29.0 & 40.1 & 45.5 & 13.4 & 20.6 & 2
 \label{tab:main_voc}
 \end{table*}
 In this section, we conduct extensive comparisons with previous methods on the existing 
-few-shot object detection benchmarks using PASCAL VOC and COCO, where our approach can obtain
-about 2$\sim$20 points improvement in all settings (Section~\ref{sec:exist_benchmark}). We then introduce a new benchmark on three datasets (PASCAL VOC, COCO and LVIS) with revised evaluation protocols to address the unreliability of previous benchmarks (Section~\ref{sec:revised_bench}). We also provide various ablation studies and visualizations in Section~\ref{sec:vis}. 
+few-shot object detection benchmarks using COCO, where our approach can obtain
+about 2$\sim$20 points improvement in all settings (Section~\ref{sec:exist_benchmark}). We then introduce a new benchmark on three datasets (COCO and LVIS) with revised evaluation protocols to address the unreliability of previous benchmarks (Section~\ref{sec:revised_bench}). We also provide various ablation studies and visualizations in Section~\ref{sec:vis}. 
 
 \minisection{Implementation details.}
 % All of our models are implemented on the Detectron2 framework \cite{wu2019detectron2}.
@@ -96,27 +96,6 @@ based approaches:  \emph{jointly training}, denoted by \texttt{FRCN/YOLO+joint},
 \end{tabular}}
 \label{tab:voc_base}
 \end{table}
-
-\minisection{Results on PASCAL VOC.} We provide the average AP50 of the novel classes on PASCAL VOC with three random splits in Table~\ref{tab:main_voc}. Our approach uses ResNet-101 as the backbone, similar to Meta R-CNN. We implement \texttt{FRCN+ft-full} in our framework, which roughly 
-matches the results reported in ~\citet{yan2019meta}. \texttt{MetaDet} uses VGG16 as the backbone, but the performance is similar and sometimes worse compared to Meta R-CNN.
-%with ResNet-101 as the backbone according to Table~\ref{tab:main_voc}.
-
-\begin{figure*}[ht]
-	\begin{center}
-		\centerline{\includegraphics[width=\columnwidth*2]{figs/avgap_std.pdf}}
-		\vspace{-5mm}
-		\caption{Cumulative means with 95\% confidence intervals across 40 repeated runs, computed on the novel classes of the first split of PASCAL VOC. The means and variances become stable after around 30 runs.}
-		\label{fig:avg-ap}
-	\end{center}
-	\vspace{-10mm}
-\end{figure*}
-
-In all different data splits and different numbers of training shots, our approach (the last row) is able to outperform the
-previous methods by a large margin. It even doubles the performance of the previous approaches in the one-shot cases. The 
-improvements, up to 20 points, is much larger than the gap among the previous meta-learning based approaches, indicating the effectiveness of our approach.  We also
-compare the cosine similarity based box classifier (\texttt{\model+w/cos}) with a normal FC-based classifier (\texttt{\model+w/fc}) and find that \texttt{\model+w/cos} is better than \texttt{\model+w/fc} on extremely low shots (\textit{e.g.,} 1-shot), but the two are roughly similar when there are more training shots, \textit{e.g.}, 10-shot. 
-
-For more detailed comparisons, we cite the numbers from~\citet{yan2019meta} of their model performance on the base classes in Table~\ref{tab:voc_base}. We find that our model has a much higher average AP on the base classes than \texttt{Meta R-CNN} with a gap of about 10 to 15 points. To eliminate the differences in implementation details, we also report our re-implementation of \texttt{FRCN+ft-full} and \texttt{training base only}, where the base classes should have the highest accuracy as the model is only trained on the base classes examples. We find that our model has a small decrease in performance, less than 2 points, on the base classes.
 
 % The main evaluation results on PASCAL VOC are shown in Table~\ref{tab:main_voc}.
 % Our approach consistently outperforms previous methods by a large margin across all three splits and across all shots.
@@ -226,15 +205,7 @@ novel AP75. We achieve around 1 point improvement in AP over the best performing
 % \label{tab:voc_bench}
 % \end{table*}
 
-\begin{figure*}[ht]
-	\begin{center}
-		\centerline{\includegraphics[width=\linewidth]{figs/pascal_benchmark_full.pdf}}
-		\vspace{-5mm}
-		\caption{Generalized object detection benchmarks on PASCAL VOC. For each metric, we report the average and 95\% confidence interval computed over 30 random samples.}
-		\label{fig:voc_bench}
-	\end{center}
-	\vspace{-10mm}
-\end{figure*}
+
 
 \subsection{Generalized few-shot object detection benchmark}
 \label{sec:revised_bench}
@@ -298,10 +269,9 @@ On the other hand, our approach is able to greatly outperform the baseline and i
 Our two-stage fine-tuning scheme is able to address the severe data imbalance issue without needing repeated sampling.
 
 \vspace{3mm}
-\minisection{Results on PASCAL VOC and COCO.}
-We show evaluation results on generalized PASCAL VOC in Figure~\ref{fig:voc_bench} and COCO in Figure~\ref{fig:coco_bench}.
-On both datasets, we evaluate on the base classes and the novel classes and report AP scores for each.
-On PASCAL VOC, we evaluate our models over 30 repeated runs and report the average and the 95\% confidence interval.
+\minisection{Results on COCO.}
+We show evaluation results on COCO in Figure~\ref{fig:coco_bench}.
+we evaluate on the base classes and the novel classes and report AP scores.
 On COCO, we provide results on 1, 2, 3, and 5 shots in addition to the 10 and 30 shots used by the existing benchmark for a better picture of performance trends in the low-shot regime. For the full quantitative results of other metrics (e.g., AP50 and AP75), more details are available in the appendix.
 
 % \begin{figure*}[!h]
@@ -329,11 +299,6 @@ On COCO, we provide results on 1, 2, 3, and 5 shots in addition to the 10 and 30
 	\setlength{\tabcolsep}{0.1em}
 	\adjustbox{width=.95\linewidth}{
 		\begin{tabular}{ccccccc}
-		    \multirow{2}{*}{\rotatebox{90}{\hspace{4mm}PASCAL VOC}}& 
-		    \rotatebox{90}{\hspace{4mm}Success} &
-			\includegraphics[width=1in]{figs/split1_bird_a.pdf} & \includegraphics[width=1in]{figs/split1_bus_a.pdf} & \includegraphics[width=1in]{figs/split1_cow_a.pdf} & \includegraphics[width=1in]{figs/split1_sofa_a.pdf} & \includegraphics[width=1in]{figs/split1_motorbike_a.pdf} \\
-			& \rotatebox{90}{\hspace{4mm}Failure} &
-			\includegraphics[width=1in]{figs/split1_bird_b.pdf} & \includegraphics[width=1in]{figs/split1_bus_b.pdf} & \includegraphics[width=1in]{figs/split1_cow_b.pdf} & \includegraphics[width=1in]{figs/split1_sofa_b.pdf} & \includegraphics[width=1in]{figs/split1_motorbike_b.pdf} \\
 			\multirow{2}{*}{\rotatebox{90}{COCO}} &
 			\rotatebox{90}{\hspace{4mm}Success} &
 			\includegraphics[width=1in]{figs/coco_bird_a.pdf} & \includegraphics[width=1in]{figs/coco_cat_a.pdf} & \includegraphics[width=1in]{figs/coco_dog_a.pdf} & \includegraphics[width=1in]{figs/coco_train_a.pdf} & \includegraphics[width=1in]{figs/coco_bottle_a.pdf} \\
@@ -341,7 +306,7 @@ On COCO, we provide results on 1, 2, 3, and 5 shots in addition to the 10 and 30
 			\includegraphics[width=1in]{figs/coco_bird_b.pdf} & \includegraphics[width=1in]{figs/coco_cat_b.pdf} & \includegraphics[width=1in]{figs/coco_dog_b.pdf} & \includegraphics[width=1in]{figs/coco_train_b.pdf} & \includegraphics[width=1in]{figs/coco_bottle_b.pdf} \\
 	\end{tabular}}
 % 	\caption{Detection results of our approach on novel classes (bird, bus, cow, sofa, and motorbike) from PASCAL VOC. We show success cases (green boxes) in the top row and failure cases (red boxes) in the bottom row. \vspace{1mm}}
-    \caption{Success (green boxes) and failure (red boxes) cases of our approach on novel classes from split 1 of PASCAL VOC (bird, bus, cow, sofa, and motorbike) and COCO (bird, cat, dog, train, and bottle). The black boxes are detected objects of irrelevant classes, which can be ignored. \vspace{1mm}}
+    \caption{Success (green boxes) and failure (red boxes) cases of our approach on novel classes from COCO (bird, cat, dog, train, and bottle). The black boxes are detected objects of irrelevant classes, which can be ignored. \vspace{1mm}}
     \label{fig:det-vis}
 \end{figure*}}
 
@@ -363,11 +328,11 @@ On COCO, we provide results on 1, 2, 3, and 5 shots in addition to the 10 and 30
 \label{sec:vis}
 
 \minisection{Weight initialization.}
-We explore two different ways of initializing the weights of the novel classifier before few-shot fine-tuning: (1) random initialization and (2) fine-tuning a predictor on the novel set and using the classifier's weights as initialization. We compare both methods on $K=1,3,10$ on split 3 of PASCAL VOC and COCO and show the results in Table~\ref{tab:weight_init}. 
-On PASCAL VOC, simple random initialization can outperform initialization using fine-tuned novel weights. On COCO, using the novel weights can improve the performance over random initialization. This is probably due to the increased complexity and number of classes of COCO compared to PASCAL VOC. We use random initialization for all PASCAL VOC experiments and novel initialization for all COCO and LVIS experiments.
+We explore two different ways of initializing the weights of the novel classifier before few-shot fine-tuning: (1) random initialization and (2) fine-tuning a predictor on the novel set and using the classifier's weights as initialization. We compare both methods on $K=1,3,10$ on COCO and show the results in Table~\ref{tab:weight_init}. 
+On COCO, using the novel weights can improve the performance over random initialization. This is probably due to the increased complexity and number of classes of COCO. We use novel initialization for all COCO and LVIS experiments.
 
 \minisection{Scaling factor of cosine similarity.}
-We explore the effect of different scaling factors for computing cosine similarity. We compare three different factors, $\alpha=10,20,50$. We use the same evaluation setting as the previous ablation study and report the results in Table~\ref{tab:cos_scale}. On PASCAL VOC, $\alpha=20$ outperforms the other scale factors in both base AP and novel AP. On COCO, $\alpha=20$ achieves better novel AP at the cost of worse base AP. Since it has the best performance on novel classes across both datasets, we use $\alpha=20$ in all of our experiments with cosine similarity.
+We explore the effect of different scaling factors for computing cosine similarity. We compare three different factors, $\alpha=10,20,50$. We use the same evaluation setting as the previous ablation study and report the results in Table~\ref{tab:cos_scale}. On COCO, $\alpha=20$ achieves better novel AP at the cost of worse base AP. Since it has the best performance on novel classes across both datasets, we use $\alpha=20$ in all of our experiments with cosine similarity.
 
 
 \begin{table}[!h]
@@ -382,8 +347,6 @@ We explore the effect of different scaling factors for computing cosine similari
 % 			\toprule
 			\multirow{2}{*}{Dataset}&\multirow{2}{*}{Init.}&\multicolumn{3}{c|}{Base AP} & \multicolumn{3}{c}{Novel AP}\\
 			& & 1 & 3 & 10 & 1 & 3 & 10 \\ \midrule
-			PASCAL VOC & Random & \textbf{51.2} & 52.6 & \textbf{52.8} & \textbf{15.6} & \textbf{25.0} & \textbf{29.4} \\ 
-			(split 3) & Novel & 50.9 & \textbf{53.1} & 52.5 & 13.4 & 24.9 & 28.9 \\ \midrule
 			\multirow{2}{*}{COCO} & Random & 34.0 & \textbf{34.7} & \textbf{34.6} & 3.2 & 6.4 & 9.6 \\ 
 			& Novel & \textbf{34.1} & \textbf{34.7} & \textbf{34.6} & \textbf{3.4} & \textbf{6.6} & \textbf{9.8} \\
 			\bottomrule
@@ -401,9 +364,6 @@ We explore the effect of different scaling factors for computing cosine similari
 % 			\toprule
 			&&\multicolumn{3}{c|}{Base AP} & \multicolumn{3}{c}{Novel AP}\\
 			Dataset & Scale  & 1 & 3 & 10 & 1 & 3 & 10 \\ \midrule
-			 & 10 & 51.0 & \textbf{52.8} & 52.7 & 9.9 & 24.9 & 19.4 \\ 
-			PASCAL VOC & 20 & \textbf{51.2} & 52.6 & \textbf{52.8} & \textbf{15.6} & \textbf{25.0} & \textbf{29.4} \\
-			(split 3) & 50 & 47.4 & 48.7 & 50.4 & 13.2 & 22.5 & 27.6 \\ \midrule
 			\multirow{3}{*}{COCO} & 10 & \textbf{34.3} & \textbf{34.9} & \textbf{35.0} & 2.8 & 3.4 & 4.7 \\ 
 			& 20 & 34.1 & 34.7 & 33.9 & \textbf{3.4} & \textbf{6.6} & \textbf{10.0} \\
 			& 50 & 30.1 & 30.7 & 34.3 & 2.4 & 5.4 & 9.0 \\
@@ -413,9 +373,8 @@ We explore the effect of different scaling factors for computing cosine similari
 \end{table}
 
 \minisection{Detection results.}
-We provide qualitative visualizations of the detected novel objects on PASCAL VOC and COCO in Figure~\ref{fig:det-vis}.
-We show both success (green boxes) and failure cases (red boxes) when detecting novel objects for each dataset to help analyze the possible error types.
-On the first split of PASCAL VOC, we visualize the results of our 10-shot \model w/ cos model.
+We provide qualitative visualizations of the detected novel objects on COCO in Figure~\ref{fig:det-vis}.
+We show both success (green boxes) and failure cases (red boxes) when detecting novel objects for COCO to help analyze the possible error types.
 On COCO, we visualize the results of the 30-shot \texttt{\model w/cos} model.
 The failure cases include misclassifying novel objects as similar base objects, \textit{e.g.}, row 2 columns 1, 2, 3, and 4, mislocalizing the objects, \textit{e.g.}, row 2 column 5, and missing detections, \textit{e.g.}, row 4 columns 1 and 5.
 % We visualize the success and failure cases of our 10-shot \model w/ cos model on novel objects from the first split of PASCAL VOC in Figure~\ref{fig:det-vis}.
