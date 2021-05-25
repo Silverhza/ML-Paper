@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex main"] 1621951882 "main.aux" "main.bbl" "main" 1621951941
+["bibtex main"] 1621951882 "main.aux" "main.bbl" "main" 1621953134
   "./icml2020.bst" 1584317404 27147 cc18c7079b8a13a6c122ae0477c442c7 ""
-  "main.aux" 1621951941 8266 287d1e8c202560efd01485b7373f2d4f ""
+  "main.aux" 1621953134 8266 287d1e8c202560efd01485b7373f2d4f ""
   "references.bib" 1584317404 7086 0134644a1a187d24e5e4697002feff42 ""
   (generated)
-  "main.bbl"
   "main.blg"
-["pdflatex"] 1621951940 "/Users/hezian/Desktop/ML-Paper/main.tex" "/Users/hezian/Desktop/ML-Paper/main.pdf" "main" 1621951941
-  "/Users/hezian/Desktop/ML-Paper/main.aux" 1621951941 8266 287d1e8c202560efd01485b7373f2d4f ""
+  "main.bbl"
+["pdflatex"] 1621953133 "/Users/hezian/Desktop/ML-Paper/main.tex" "/Users/hezian/Desktop/ML-Paper/main.pdf" "main" 1621953134
+  "/Users/hezian/Desktop/ML-Paper/main.aux" 1621953134 8266 287d1e8c202560efd01485b7373f2d4f ""
   "/Users/hezian/Desktop/ML-Paper/main.tex" 1621951939 6905 3913b3db703bacd31ed2c1d24bbd5509 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
@@ -144,7 +144,7 @@
   "algorithmic.sty" 1584317404 7414 ce084815cf0aab483787dbc4bf2ace9c ""
   "appendix.tex" 1584317404 23123 cfc90054a6dc771aa063796e1cd21292 ""
   "conclusion.tex" 1584317404 497 d287c6be84a5bc7bf7ef4b3f3a8611a0 ""
-  "experiment.tex" 1621951641 33326 d8da34b643b34c92e609f38f49fa1af2 ""
+  "experiment.tex" 1621953134 33301 d9c9cdd72e4d710c51f4947ba5eb7ecf ""
   "fancyhdr.sty" 1584317404 20521 e5d13d98d57bd53d4fed3aa61bd29c86 ""
   "figs/TFA_fig1.pdf" 1584317404 44247 c3356080f410ec8498d7010f93a01025 ""
   "figs/TFA_fig2.pdf" 1584317404 89043 06f3640f730a74875856362e53a8482b ""
@@ -163,16 +163,16 @@
   "figs/coco_train_b.pdf" 1584317404 361562 0512081904986ca5249e439a42f3a4e2 ""
   "icml2020.sty" 1584317404 27275 4bde33c2c113412b383015170f5406b4 ""
   "introduction.tex" 1621951879 6230 2a45b29b7b96c3c54508960fed449a09 ""
-  "main.aux" 1621951941 8266 287d1e8c202560efd01485b7373f2d4f ""
+  "main.aux" 1621953134 8266 287d1e8c202560efd01485b7373f2d4f ""
   "main.bbl" 1621951882 7244 e554c517f3a2e05b1a2fec0a8fe63526 "bibtex main"
-  "main.out" 1621951940 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "main.out" 1621953133 0 d41d8cd98f00b204e9800998ecf8427e ""
   "main.tex" 1621951939 6905 3913b3db703bacd31ed2c1d24bbd5509 ""
   "method.tex" 1621951900 8301 fdd6d86ed9a5e489f29437a303332a4e ""
   "related_work.tex" 1584317404 4400 0995f24a378f013e67291293671aa259 ""
   (generated)
-  "/Users/hezian/Desktop/ML-Paper/main.log"
-  "/Users/hezian/Desktop/ML-Paper/main.pdf"
   "main.aux"
   "main.log"
-  "main.out"
   "main.pdf"
+  "/Users/hezian/Desktop/ML-Paper/main.pdf"
+  "main.out"
+  "/Users/hezian/Desktop/ML-Paper/main.log"
