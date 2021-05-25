@@ -43,8 +43,7 @@ During the fine-tuning stage, we introduce instance-level feature normalization 
 
 
 We find that this two-stage fine-tuning approach (\model) outperforms all previous
-state-of-the-art meta-learning based methods by 2$\sim$20 points on the existing PASCAL
-VOC~\cite{pascal-voc-2007} and COCO~\cite{Lin2014MicrosoftCC} benchmarks. 
+state-of-the-art meta-learning based methods by 2$\sim$20 points on the existing COCO~\cite{Lin2014MicrosoftCC} benchmarks. 
 When training on a single novel example (one-shot learning), our method can achieve twice
 the accuracy of prior sophisticated state-of-the-art approaches.
 
@@ -53,7 +52,7 @@ the accuracy of prior sophisticated state-of-the-art approaches.
 Several issues with the existing evaluation protocols prevent consistent model comparisons. The accuracy measurements have high variance, making published comparisons unreliable.  Also, the previous evaluations only report the detection accuracy on the novel classes, and fail to evaluate knowledge retention on the base classes.
 % encouraging knowledge forgetting on base classes.
 
-To resolve these issues, we build new benchmarks on three datasets: PASCAL VOC, COCO and LVIS~\cite{gupta2019lvis}.
+To resolve these issues, we build new benchmarks on two datasets: COCO and LVIS~\cite{gupta2019lvis}.
 % disjoint groups
 We sample different groups of few-shot training examples for multiple runs of the experiments to obtain a stable accuracy estimation and quantitatively analyze the variances of different evaluation metrics. The new evaluation reports the average precision (AP) on both the base classes and novel classes as well as the mean AP on all classes, referred to as the generalized few-shot learning setting in the few-shot classification literature~\cite{hariharan2017low,wang2019tafe}.
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{25}
+\begin{thebibliography}{24}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -15,15 +15,6 @@ Chen, W.-Y., Liu, Y.-C., Kira, Z., Wang, Y.-C.~F., and Huang, J.-B.
 Dhillon, G.~S., Chaudhari, P., Ravichandran, A., and Soatto, S.
 \newblock A baseline for few-shot image classification.
 \newblock \emph{arXiv preprint arXiv:1909.02729}, 2019.
-
-\bibitem[Everingham et~al.(2007)Everingham, Van~Gool, Williams, Winn, and
-  Zisserman]{pascal-voc-2007}
-Everingham, M., Van~Gool, L., Williams, C. K.~I., Winn, J., and Zisserman, A.
-\newblock The {PASCAL} {V}isual {O}bject {C}lasses {C}hallenge 2007 {(VOC2007)}
-  {R}esults.
-\newblock
-  http://www.pascal-network.org/challenges/VOC/voc2007/workshop/index.html,
-  2007.
 
 \bibitem[Finn et~al.(2017)Finn, Abbeel, and Levine]{finn2017model}
 Finn, C., Abbeel, P., and Levine, S.

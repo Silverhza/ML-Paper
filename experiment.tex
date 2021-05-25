@@ -1,40 +1,5 @@
 \section{Experiments}
-\begin{table*}[ht]
-\centering
-\footnotesize
-\setlength{\tabcolsep}{0.4em}
-\caption{{Few-shot detection performance (mAP50) on the PASCAL VOC dataset.} We evaluate the performance on three different sets of novel classes. Our approach consistently outperforms baseline methods by a large margin (about 2$\sim$20 points), especially when the number of shots is low. FRCN stands for Faster R-CNN. \model w/ cos is our approach with a cosine similarity based box classifier. \vspace{1mm}
-}
-\adjustbox{width=\linewidth}{
-\begin{tabular}{l|c|ccccc|ccccc|ccccc}
-\toprule
-\multirow{2}{*}{Method / Shot} & \multirow{2}{*}{Backbone} & \multicolumn{5}{c|}{Novel Set 1} & \multicolumn{5}{c|}{Novel Set 2} & \multicolumn{5}{c}{Novel Set 3} \\ 
-&  & 1     & 2     & 3    & 5    & 10   & 1     & 2     & 3    & 5    & 10   & 1     & 2     & 3    & 5    & 10   \\ \midrule
-\bs{}~\cite{kang2019few}   &  \multirow{5}{*}{YOLOv2}  & 0.0   & 0.0   & 1.8  & 1.8  & 1.8  & 0.0   & 0.1   & 0.0  & 1.8  & 0.0    & 1.8   & 1.8   & 1.8  & 3.6  & 3.9  \\ %\hline
-\bbsshort{}~\cite{kang2019few}  & & 3.2   & 6.5   & 6.4  & 7.5  & 12.3 & 8.2   & 3.8   & 3.5  & 3.5  & 7.8  & 8.1   & 7.4   & 7.6  & 9.5  & 10.5 \\ %\hline
-\bbs{}~\cite{kang2019few}  &  & 6.6   & 10.7  & 12.5 & 24.8 & 38.6 & 12.5  & 4.2   & 11.6 & 16.1 & 33.9 & 13.0  & 15.9  & 15.0 & 32.2 & 38.4 \\ 
-FSRW~\cite{kang2019few}  &  & 14.8  & 15.5  & 26.7 & 33.9 & 47.2 & 15.7  & 15.3  & 22.7 & 30.1 & 40.5 & 21.3  & 25.6  & 28.4 & 42.8 & 45.9 \\ 
-MetaDet~\cite{wang2019meta} & & 17.1 & 19.1 & 28.9 & 35.0 & 48.8 & 18.2 & 20.6 & 25.9 & 30.6 & 41.5 & 20.1 & 22.3 & 27.9 & 41.9 & 42.9 \\ \midrule
-FRCN+joint~\cite{wang2019meta} & \multirow{3}{*}{FRCN w/VGG16} & 0.3 & 0.0 & 1.2 & 0.9 & 1.7 & 0.0 & 0.0 & 1.1 & 1.9 & 1.7 & 0.2 & 0.5 & 1.2 & 1.9 & 2.8\\
-FRCN+joint-ft~\cite{wang2019meta} & & 9.1 & 10.9 & 
-13.7 & 25.0 & 39.5 & 10.9 & 13.2 & 17.6 & 19.5 & 36.5 & 15.0 & 15.1 & 18.3 & 33.1 & 35.9 \\
-MetaDet~\cite{wang2019meta} &  & 18.9 & 20.6 & 30.2 & 36.8 & 49.6 & 21.8 & 23.1 & 27.8 & 31.7 & 43.0 & 20.6 & 23.9 & 29.4 & 43.9 & 44.1 \\ \midrule
-FRCN+joint~\cite{yan2019meta} & \multirow{4}{*}{FRCN w/R-101} & 2.7 & 3.1 & 4.3 & 11.8 & 29.0 & 1.9 & 2.6 & 8.1 & 9.9 & 12.6 & 5.2 & 7.5 & 6.4 & 6.4 & 6.4 \\
-FRCN+ft~\cite{yan2019meta} &  & 11.9 & 16.4 & 
-29.0 & 36.9 & 36.9 & 5.9 & 8.5 & 23.4 & 29.1 & 28.8 & 5.0 & 9.6 & 18.1 & 30.8 & 43.4 \\
-FRCN+ft-full~\cite{yan2019meta} &  & 13.8 & 19.6 
-& 32.8 & 41.5 & 45.6 & 7.9 & 15.3 & 26.2 & 31.6 & 39.1 & 9.8 & 11.3 & 19.1 & 35.0 & 45.1 \\
-Meta R-CNN~\cite{yan2019meta} &  & 19.9 & 25.5 & 35.0 & 45.7 & 51.5 & 10.4 & 19.4 & 29.6 & 34.8 & \textbf{45.4} & 14.3 & 18.2 & 27.5 & 41.2 & 48.1 \\ \midrule
-% Two-stage ft w/ FC & Faster R-CNN w/ ResNet-101 & 18.7 & 27.4 & 37.3 & 49.2 & 52.3 & 6.5 & 19.9 & 25.4 & 25.5 & 27.4 &  27.7 & 33.6 & 42.5 & 48.7 & \textbf{50.2}\\ 
-% Two-stage ft w/ cos & Faster R-CNN w/ ResNet-101 & 39.8 & 35.9 & 44.7 & 55.7 & 56.0 & 22.0 & 26.6 & 34.0 & 35.3 & 38.9 & 30.8 & 34.8 & 42.8 & 49.5 & 49.8 \\
-% FRCN+joint (Ours) & \multirow{2}{*}{FRCN w/R-101} & 0.0 &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
-FRCN+ft-full (Our Impl.) &  & 15.2 & 20.3 & 29.0 & 40.1 & 45.5 & 13.4 & 20.6 & 28.6 & 32.4 & 38.8 & 19.6 & 20.8 & 28.7 & 42.2 & 42.1 \\
-\rowcolor{Gray} \model w/ fc (Ours) &  & 36.8 & 29.1 & 43.6 & \textbf{55.7} & \textbf{57.0} & 18.2 & \textbf{29.0} & 33.4 & \textbf{35.5} & 39.0 & 27.7 & 33.6 & 42.5 & 48.7 & \textbf{50.2} \\
-\rowcolor{Gray} \model w/ cos (Ours) & \multirow{-3}{*}{FRCN w/R-101} & \textbf{39.8} & \textbf{36.1} & \textbf{44.7} & \textbf{55.7} & 56.0 & \textbf{23.5} & 26.9 & \textbf{34.1} & 35.1 & 39.1 & \textbf{30.8} & \textbf{34.8} & \textbf{42.8} & \textbf{49.5} & 49.8 \\
-\bottomrule
-\end{tabular}}
-\label{tab:main_voc}
-\end{table*}
+
 In this section, we conduct extensive comparisons with previous methods on the existing 
 few-shot object detection benchmarks using COCO, where our approach can obtain
 about 2$\sim$20 points improvement in all settings (Section~\ref{sec:exist_benchmark}). We then introduce a new benchmark on three datasets (COCO and LVIS) with revised evaluation protocols to address the unreliability of previous benchmarks (Section~\ref{sec:revised_bench}). We also provide various ablation studies and visualizations in Section~\ref{sec:vis}. 
@@ -53,9 +18,9 @@ For more details, the code is available at~\url{https://github.com/ucbdrive/few-
 % We use the same evaluation protocol as previous works \cite{kang2019few, yan2019meta, wang2019meta}, which we will describe next.
 \minisection{Existing benchmarks.} 
 Following the previous work~\cite{kang2019few,yan2019meta,wang2019meta}, we 
-first evaluate our approach on PASCAL VOC 2007+2012 and COCO, using the same data splits and training examples provided by ~\citet{kang2019few}.
+first evaluate our approach on COCO, using the same data splits and training examples provided by ~\citet{kang2019few}.
 % \footnote{code and data at \url{https://github.com/bingykang/Fewshot_Detection}}. 
-For the few-shot PASCAL VOC dataset,  the 20 classes are randomly divided into 15 base classes and 5 novel classes, where the novel classes have $K=1,2,3,5,10$ objects per class sampled from the combination of the trainval sets of the 2007 and 2012 versions for training. Three random split groups are considered in this work. PASCAL VOC 2007 test set is used for evaluation. For COCO, the 60 categories disjoint with PASCAL VOC are used as base classes while the remaining 20 classes are used as novel classes with $K=10, 30$.  For evaluation metrics, AP50 (matching threshold is 0.5) of the novel classes is used on PASCAL VOC and the COCO-style AP of the novel classes is used on COCO. 
+For COCO, the 60 categories disjoint with PASCAL VOC are used as base classes while the remaining 20 classes are used as novel classes with $K=10, 30$.  For evaluation metrics, the COCO-style AP of the novel classes is used on COCO. 
 % On PASCAL VOC, we use the train/val sets in VOC 2007 and 2012 for training and the VOC 2007 test set for evaluation.
 % To construct the few-shot setting, we randomly split the 20 object categories into 15 as the base categories and the remaining 5 as the novel categories, and we evaluate on three different random splits.
 % On COCO, we use 5k images from the validation set for evaluation and the remaining images from the train/val sets for training.
@@ -72,30 +37,6 @@ based approaches:  \emph{jointly training}, denoted by \texttt{FRCN/YOLO+joint},
 % We train this baseline with the same number of iterations as our method.
 % We also compare our approach to previous meta-learning based methods, FSRW~\cite{kang2019few}, MetaDet~\cite{wang2019meta}, and Meta R-CNN~\cite{yan2019meta}.
 
-\begin{table}[ht]
-\centering
-\footnotesize
-\setlength{\tabcolsep}{0.4em}
-\caption{{Few-shot detection performance for the base and novel classes on Novel Set 1 of the PASCAL VOC dataset.} Our approach outperforms baselines on both base and novel classes and does not degrade the performance on the base classes greatly.\vspace{1mm}}
-\adjustbox{width=\linewidth}{
-\begin{tabular}{cc|cc}
-\toprule
-\# shots & Method  &  Base AP50 & Novel AP50  \\ \midrule
-\multirow{5}{*}{3} & FRCN+ft-full~\cite{yan2019meta} & 63.6 & 32.8\\
-                  & Meta R-CNN~\cite{yan2019meta} & 64.8 & 35.0 \\ %\cmidrule{2-4}
-                  & Train base only (Our Impl.) &\textbf{80.8} & 9.0 \\
-                  & FRCN+ft-full (Our Impl.) & 66.1 & 29.0 \\
-                     &\cellcolor{Gray} \model w/ cos (Ours)    & \cellcolor{Gray}79.1 & \cellcolor{Gray}\textbf{44.7} \\  \midrule\midrule
-\multirow{5}{*}{10} & FRCN+ft-full~\cite{yan2019meta} & 61.3 & 45.6 \\
-                    & Meta R-CNN~\cite{yan2019meta} & 67.9 & 51.5 \\ %\cmidrule{2-4}
-                    & Train base only & \textbf{80.8} & 9.0 \\
-                    & FRCN+ft-full (Our Impl.) & 66.0 & 45.5 \\
-                    & \cellcolor{Gray}\model w/ cos (Ours) & \cellcolor{Gray}78.4 & \cellcolor{Gray}\textbf{56.0} \\
-\bottomrule
-% \vspace{-0.8cm}
-\end{tabular}}
-\label{tab:voc_base}
-\end{table}
 
 % The main evaluation results on PASCAL VOC are shown in Table~\ref{tab:main_voc}.
 % Our approach consistently outperforms previous methods by a large margin across all three splits and across all shots.
@@ -221,11 +162,6 @@ This makes it difficult to draw conclusions from comparisons against other metho
 
 To address these issues, we first revise the evaluation protocol to include evaluation on base classes. On our benchmark, we report AP on base classes (bAP) and the overall AP in addition to AP on the novel classes (nAP). This allows us to observe trends in performance on both base and novel classes, and the overall performance of the network.
 
-Additionally, we train our models for multiple runs on different random samples of training shots to obtain averages and confidence intervals.
-In Figure~\ref{fig:avg-ap}, we show the cumulative mean and 95\% confidence interval across 40 repeated runs with $K=1,3,5,10$ on the first split of PASCAL VOC.
-Although the performance is high on the first random sample, the average decreases significantly as more samples are used.
-Additionally, the confidence intervals across the first few runs are large, especially in the low-shot scenario.
-When we use more repeated runs, the averages stabilizes and the confidence intervals become small, which allows for better comparisons.
 
 % \begin{table*}[ht]
 % \centering

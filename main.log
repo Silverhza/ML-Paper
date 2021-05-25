@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.8.7)  25 MAY 2021 20:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.8.7)  25 MAY 2021 22:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -605,104 +605,98 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [2 </Users/hezian/Desktop/ML-Paper/figs/TFA_fig1.pdf>]) (/Users/hezian/Desktop/ML-Paper/method.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<figs/TFA_fig2.pdf, id=182, 1373.13pt x 303.1325pt>
+<figs/TFA_fig2.pdf, id=177, 1373.13pt x 303.1325pt>
 File: figs/TFA_fig2.pdf Graphic file (type pdf)
 <use figs/TFA_fig2.pdf>
 Package pdftex.def Info: figs/TFA_fig2.pdf  used on input line 63.
 (pdftex.def)             Requested size: 487.8225pt x 107.6891pt.
+
+Underfull \vbox (badness 6348) has occurred while \output is active []
+
  [3]) (/Users/hezian/Desktop/ML-Paper/experiment.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4 </Users/hezian/Desktop/ML-Paper/figs/TFA_fig2.pdf>]
-Underfull \hbox (badness 1024) in paragraph at lines 66--68
+Underfull \hbox (badness 1024) in paragraph at lines 31--33
 \OT1/ptm/m/n/10 (+20) base and novel class ex-am-ples are jointly trained in
  []
 
+<figs/coco_benchmark_full.pdf, id=307, 1241.5101pt x 275.81532pt>
+File: figs/coco_benchmark_full.pdf Graphic file (type pdf)
+<use figs/coco_benchmark_full.pdf>
+Package pdftex.def Info: figs/coco_benchmark_full.pdf  used on input line 224.
+(pdftex.def)             Requested size: 439.03726pt x 97.53424pt.
+
+Overfull \vbox (8.00183pt too high) detected at line 238
+ []
+
+<figs/coco_bird_a.pdf, id=308, 501.88504pt x 376.41629pt>
+File: figs/coco_bird_a.pdf Graphic file (type pdf)
+<use figs/coco_bird_a.pdf>
+Package pdftex.def Info: figs/coco_bird_a.pdf  used on input line 240.
+(pdftex.def)             Requested size: 72.26999pt x 54.20274pt.
+<figs/coco_cat_a.pdf, id=309, 501.88504pt x 376.41629pt>
+File: figs/coco_cat_a.pdf Graphic file (type pdf)
+<use figs/coco_cat_a.pdf>
+Package pdftex.def Info: figs/coco_cat_a.pdf  used on input line 240.
+(pdftex.def)             Requested size: 72.26999pt x 54.20274pt.
+<figs/coco_dog_a.pdf, id=310, 501.88504pt x 376.41629pt>
+File: figs/coco_dog_a.pdf Graphic file (type pdf)
+<use figs/coco_dog_a.pdf>
+Package pdftex.def Info: figs/coco_dog_a.pdf  used on input line 240.
+(pdftex.def)             Requested size: 72.26999pt x 54.20274pt.
+<figs/coco_train_a.pdf, id=311, 501.88504pt x 376.41629pt>
+File: figs/coco_train_a.pdf Graphic file (type pdf)
+<use figs/coco_train_a.pdf>
+Package pdftex.def Info: figs/coco_train_a.pdf  used on input line 240.
+(pdftex.def)             Requested size: 72.26999pt x 54.20274pt.
+<figs/coco_bottle_a.pdf, id=312, 501.88504pt x 376.41629pt>
+File: figs/coco_bottle_a.pdf Graphic file (type pdf)
+<use figs/coco_bottle_a.pdf>
+Package pdftex.def Info: figs/coco_bottle_a.pdf  used on input line 240.
+(pdftex.def)             Requested size: 72.26999pt x 54.20274pt.
+<figs/coco_bird_b.pdf, id=313, 501.88504pt x 376.41629pt>
+File: figs/coco_bird_b.pdf Graphic file (type pdf)
+<use figs/coco_bird_b.pdf>
+Package pdftex.def Info: figs/coco_bird_b.pdf  used on input line 242.
+(pdftex.def)             Requested size: 72.26999pt x 54.20274pt.
+<figs/coco_cat_b.pdf, id=314, 501.88504pt x 376.41629pt>
+File: figs/coco_cat_b.pdf Graphic file (type pdf)
+<use figs/coco_cat_b.pdf>
+Package pdftex.def Info: figs/coco_cat_b.pdf  used on input line 242.
+(pdftex.def)             Requested size: 72.26999pt x 54.20274pt.
+<figs/coco_dog_b.pdf, id=315, 501.88504pt x 376.41629pt>
+File: figs/coco_dog_b.pdf Graphic file (type pdf)
+<use figs/coco_dog_b.pdf>
+Package pdftex.def Info: figs/coco_dog_b.pdf  used on input line 242.
+(pdftex.def)             Requested size: 72.26999pt x 54.20274pt.
+<figs/coco_train_b.pdf, id=316, 501.88504pt x 376.41629pt>
+File: figs/coco_train_b.pdf Graphic file (type pdf)
+<use figs/coco_train_b.pdf>
+Package pdftex.def Info: figs/coco_train_b.pdf  used on input line 242.
+(pdftex.def)             Requested size: 72.26999pt x 54.20274pt.
+<figs/coco_bottle_b.pdf, id=317, 501.88504pt x 376.41629pt>
+File: figs/coco_bottle_b.pdf Graphic file (type pdf)
+<use figs/coco_bottle_b.pdf>
+Package pdftex.def Info: figs/coco_bottle_b.pdf  used on input line 242.
+(pdftex.def)             Requested size: 72.26999pt x 54.20274pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5]
 
-LaTeX Warning: Reference `fig:avg-ap' on page 6 undefined on input line 225.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-<figs/coco_benchmark_full.pdf, id=352, 1241.5101pt x 275.81532pt>
-File: figs/coco_benchmark_full.pdf Graphic file (type pdf)
-<use figs/coco_benchmark_full.pdf>
-Package pdftex.def Info: figs/coco_benchmark_full.pdf  used on input line 288.
-(pdftex.def)             Requested size: 439.03726pt x 97.53424pt.
-
-Overfull \vbox (8.00183pt too high) detected at line 302
- []
-
-<figs/coco_bird_a.pdf, id=353, 501.88504pt x 376.41629pt>
-File: figs/coco_bird_a.pdf Graphic file (type pdf)
-<use figs/coco_bird_a.pdf>
-Package pdftex.def Info: figs/coco_bird_a.pdf  used on input line 304.
-(pdftex.def)             Requested size: 72.26999pt x 54.20274pt.
-<figs/coco_cat_a.pdf, id=354, 501.88504pt x 376.41629pt>
-File: figs/coco_cat_a.pdf Graphic file (type pdf)
-<use figs/coco_cat_a.pdf>
-Package pdftex.def Info: figs/coco_cat_a.pdf  used on input line 304.
-(pdftex.def)             Requested size: 72.26999pt x 54.20274pt.
-<figs/coco_dog_a.pdf, id=355, 501.88504pt x 376.41629pt>
-File: figs/coco_dog_a.pdf Graphic file (type pdf)
-<use figs/coco_dog_a.pdf>
-Package pdftex.def Info: figs/coco_dog_a.pdf  used on input line 304.
-(pdftex.def)             Requested size: 72.26999pt x 54.20274pt.
-<figs/coco_train_a.pdf, id=356, 501.88504pt x 376.41629pt>
-File: figs/coco_train_a.pdf Graphic file (type pdf)
-<use figs/coco_train_a.pdf>
-Package pdftex.def Info: figs/coco_train_a.pdf  used on input line 304.
-(pdftex.def)             Requested size: 72.26999pt x 54.20274pt.
-<figs/coco_bottle_a.pdf, id=357, 501.88504pt x 376.41629pt>
-File: figs/coco_bottle_a.pdf Graphic file (type pdf)
-<use figs/coco_bottle_a.pdf>
-Package pdftex.def Info: figs/coco_bottle_a.pdf  used on input line 304.
-(pdftex.def)             Requested size: 72.26999pt x 54.20274pt.
-<figs/coco_bird_b.pdf, id=358, 501.88504pt x 376.41629pt>
-File: figs/coco_bird_b.pdf Graphic file (type pdf)
-<use figs/coco_bird_b.pdf>
-Package pdftex.def Info: figs/coco_bird_b.pdf  used on input line 306.
-(pdftex.def)             Requested size: 72.26999pt x 54.20274pt.
-<figs/coco_cat_b.pdf, id=359, 501.88504pt x 376.41629pt>
-File: figs/coco_cat_b.pdf Graphic file (type pdf)
-<use figs/coco_cat_b.pdf>
-Package pdftex.def Info: figs/coco_cat_b.pdf  used on input line 306.
-(pdftex.def)             Requested size: 72.26999pt x 54.20274pt.
-<figs/coco_dog_b.pdf, id=360, 501.88504pt x 376.41629pt>
-File: figs/coco_dog_b.pdf Graphic file (type pdf)
-<use figs/coco_dog_b.pdf>
-Package pdftex.def Info: figs/coco_dog_b.pdf  used on input line 306.
-(pdftex.def)             Requested size: 72.26999pt x 54.20274pt.
-<figs/coco_train_b.pdf, id=361, 501.88504pt x 376.41629pt>
-File: figs/coco_train_b.pdf Graphic file (type pdf)
-<use figs/coco_train_b.pdf>
-Package pdftex.def Info: figs/coco_train_b.pdf  used on input line 306.
-(pdftex.def)             Requested size: 72.26999pt x 54.20274pt.
-<figs/coco_bottle_b.pdf, id=362, 501.88504pt x 376.41629pt>
-File: figs/coco_bottle_b.pdf Graphic file (type pdf)
-<use figs/coco_bottle_b.pdf>
-Package pdftex.def Info: figs/coco_bottle_b.pdf  used on input line 306.
-(pdftex.def)             Requested size: 72.26999pt x 54.20274pt.
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (/Users/hezian/Desktop/ML-Paper/conclusion.tex) (/Users/hezian/Desktop/ML-Paper/main.bbl
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+) (/Users/hezian/Desktop/ML-Paper/conclusion.tex
+Underfull \vbox (badness 7047) has occurred while \output is active []
 
-
-Underfull \vbox (badness 1062) has occurred while \output is active []
-
- [7 </Users/hezian/Desktop/ML-Paper/figs/coco_benchmark_full.pdf> </Users/hezian/Desktop/ML-Paper/figs/coco_bird_a.pdf
+ [6 </Users/hezian/Desktop/ML-Paper/figs/coco_benchmark_full.pdf> </Users/hezian/Desktop/ML-Paper/figs/coco_bird_a.pdf
 
 pdfTeX warning: pdflatex (file /Users/hezian/Desktop/ML-Paper/figs/coco_bird_a.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > </Users/hezian/Desktop/ML-Paper/figs/coco_cat_a.pdf
@@ -732,33 +726,28 @@ pdfTeX warning: pdflatex (file /Users/hezian/Desktop/ML-Paper/figs/coco_train_b.
 > </Users/hezian/Desktop/ML-Paper/figs/coco_bottle_b.pdf
 
 pdfTeX warning: pdflatex (file /Users/hezian/Desktop/ML-Paper/figs/coco_bottle_b.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-Overfull \hbox (13.09517pt too wide) in paragraph at lines 21--27
-\OT1/ptm/m/n/10 (-20) network.org/challenges/VOC/voc2007/workshop/index.html,
- []
-
-
-Underfull \hbox (badness 3758) in paragraph at lines 90--93
+>]) (/Users/hezian/Desktop/ML-Paper/main.bbl
+Underfull \hbox (badness 3758) in paragraph at lines 81--84
 []\OT1/ptm/m/n/10 (+20) Nichol, A., Achiam, J., and Schul-man, J.  On
  []
 
-) (/Users/hezian/Desktop/ML-Paper/appendix.tex [8]
+[7]) (/Users/hezian/Desktop/ML-Paper/appendix.tex
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figs/all_avgap_std.pdf, id=652, 1456.89607pt x 603.73442pt>
+<figs/all_avgap_std.pdf, id=609, 1456.89607pt x 603.73442pt>
 File: figs/all_avgap_std.pdf Graphic file (type pdf)
 <use figs/all_avgap_std.pdf>
 Package pdftex.def Info: figs/all_avgap_std.pdf  used on input line 152.
 (pdftex.def)             Requested size: 469.755pt x 194.66371pt.
-<figs/coco_avgap_std.pdf, id=653, 1090.09137pt x 441.79361pt>
+<figs/coco_avgap_std.pdf, id=610, 1090.09137pt x 441.79361pt>
 File: figs/coco_avgap_std.pdf Graphic file (type pdf)
 <use figs/coco_avgap_std.pdf>
 Package pdftex.def Info: figs/coco_avgap_std.pdf  used on input line 162.
 (pdftex.def)             Requested size: 390.25948pt x 158.16248pt.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 152.
- [9] [10] [11 </Users/hezian/Desktop/ML-Paper/figs/all_avgap_std.pdf> </Users/hezian/Desktop/ML-Paper/figs/coco_avgap_std.pdf
+ [8] [9] [10 </Users/hezian/Desktop/ML-Paper/figs/all_avgap_std.pdf> </Users/hezian/Desktop/ML-Paper/figs/coco_avgap_std.pdf
 
 pdfTeX warning: pdflatex (file /Users/hezian/Desktop/ML-Paper/figs/coco_avgap_std.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
@@ -768,25 +757,21 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 152.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 152.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Warning: There were undefined references.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
  ) 
 Here is how much of TeX's memory you used:
- 10643 strings out of 492649
- 160337 string characters out of 6129623
- 450942 words of memory out of 5000000
- 13960 multiletter control sequences out of 15000+600000
- 42883 words of font info for 225 fonts, out of 8000000 for 9000
+ 10625 strings out of 492649
+ 160113 string characters out of 6129623
+ 454130 words of memory out of 5000000
+ 13954 multiletter control sequences out of 15000+600000
+ 42570 words of font info for 220 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,13n,55p,930b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,13n,55p,916b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/hezian/Desktop/ML-Paper/main.pdf (11 pages, 3713103 bytes).
+Output written on /Users/hezian/Desktop/ML-Paper/main.pdf (10 pages, 3704810 bytes).
 PDF statistics:
- 813 PDF objects out of 1000 (max. 8388607)
- 514 compressed objects within 6 object streams
- 68 named destinations out of 1000 (max. 500000)
+ 768 PDF objects out of 1000 (max. 8388607)
+ 471 compressed objects within 5 object streams
+ 64 named destinations out of 1000 (max. 500000)
  36428 words of extra memory for PDF output out of 42996 (max. 10000000)
 
