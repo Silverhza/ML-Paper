@@ -1,0 +1,44 @@
+\section{Related Work}
+Our work is related to the rich literature on few-shot image classification, which uses various 
+meta-learning based or metric-learning based methods. We also draw connections between our work and the existing meta-learning based few-shot object detection methods. To the best of our knowledge, we are the first to conduct a systematic analysis of fine-tuning based approaches on few-shot object detection. 
+
+\minisection{Meta-learning.} The goal of meta-learning is to acquire task-level meta knowledge that
+can help the model quickly adapt to new tasks and environments with very few labeled examples.  Some~\cite{finn2017model,rusu2018meta,nichol2018reptile} learn to fine-tune and aim to obtain a good parameter initialization that can adapt to
+new tasks with a few scholastic gradient updates. Another popular line of research on meta-learning is to use parameter generation during adaptation to novel tasks. \citet{gidaris2018dynamic} propose an attention-based weight generator to generate the classifier weights for the novel classes. \citet{wang2019tafe} construct task-aware feature embeddings by generating parameters for the feature layers. These approaches have only been used for few-shot image 
+classification and not on more challenging tasks like object detection.
+
+However, some~\cite{chen2019closer} 
+raise concerns about the reliability of the results given 
+that a consistent comparison of different approaches is missing. 
+Some simple fine-tuning based approaches, which draw little attention in the
+community, turn out to be more favorable than many prior works that use meta-learning
+on few-shot image classification~\cite{chen2019closer,dhillon2019baseline}.
+As for the emerging few-shot object detection task, there is neither consensus on the evaluation benchmarks nor a consistent comparison of different approaches due to the increased network complexity, obscure implementation details, and variances in evaluation protocols.
+
+\minisection{Metric-learning.} Another line of work~\cite{koch2015siamese,snell2017prototypical,vinyals2016matching}
+focuses on learning to compare or metric-learning. Intuitively, if the model can construct distance metrics to 
+estimate the similarity between two input images, it may generalize to 
+novel categories with few labeled instances. More recently, several~\cite{chen2019closer,gidaris2018dynamic,qi2018low} adopt a 
+cosine similarity based classifier to reduce the intra-class variance on the few-shot classification task, which leads to favorable performance compared to many 
+meta-learning based approaches. Our method also adopts a cosine
+similarity classifier to classify the categories of the region proposals. However, we focus on the instance-level distance measurement rather than on the image level.
+
+\minisection{Few-shot object detection.} There are several early attempts 
+at few-shot object detection using meta-learning. ~\citet{kang2019few} and 
+~\citet{yan2019meta} apply feature re-weighting schemes to a
+single-stage object detector (YOLOv2) and a two-stage object detector
+(Faster R-CNN), with the help of a meta learner that takes the support images (\textit{i.e.}, a small number of labeled images of the novel/base classes) 
+as well as the bounding box annotations as inputs. ~\citet{wang2019meta} 
+propose a weight prediction meta-model to predict parameters of
+category-specific components from the few examples while learning the category-agnostic components from base class examples. 
+
+In all these works, fine-tuning based approaches are considered as baselines
+with worse performance than meta-learning based approaches. They consider
+\emph{jointly fine-tuning}, where base classes and novel classes are trained together, and \emph{fine-tuning the entire model}, where the detector is first trained on the base classes only and then fine-tuned on a balanced set with both base and novel classes. In contrast, we find that fine-tuning only the last layer of the object detector on the balanced subset and keeping the rest of model fixed can substantially improve the
+detection accuracy, outperforming all the prior meta-learning based
+approaches. This indicates that feature representations
+learned from the base classes might be able to transfer to the novel classes
+and simple adjustments to the box predictor can provide 
+strong performance gain~\cite{dhillon2019baseline}. 
+
+

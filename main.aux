@@ -1,0 +1,153 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{landau1988importance,samuelson2005they,smith2002object}
+\citation{vinyals2016matching,snell2017prototypical,finn2017model,hariharan2017low,gidaris2018dynamic,wang2019tafe}
+\citation{kang2019few,yan2019meta,wang2019meta}
+\citation{kang2019few,yan2019meta,wang2019meta}
+\citation{ren2015faster}
+\citation{gidaris2018dynamic,qi2018low,chen2019closer}
+\citation{pascal-voc-2007}
+\citation{Lin2014MicrosoftCC}
+\providecommand \oddpage@label [2]{}
+\citation{gupta2019lvis}
+\citation{hariharan2017low,wang2019tafe}
+\citation{finn2017model,rusu2018meta,nichol2018reptile}
+\citation{gidaris2018dynamic}
+\citation{wang2019tafe}
+\citation{chen2019closer}
+\citation{chen2019closer,dhillon2019baseline}
+\citation{koch2015siamese,snell2017prototypical,vinyals2016matching}
+\citation{chen2019closer,gidaris2018dynamic,qi2018low}
+\citation{kang2019few}
+\citation{yan2019meta}
+\citation{wang2019meta}
+\newlabel{fig:tfa_arch}{{1}{2}{Illustration of our two-stage fine-tuning approach (\model ). In the base training stage, the entire object detector, including both the feature extractor $\mathcal {F}$ and the box predictor, are jointly trained on the base classes. In the few-shot fine-tuning stage, the feature extractor components are fixed and only the box predictor is fine-tuned on a balanced subset consisting of both the base and novel classes}{figure.1}{}}
+\citation{dhillon2019baseline}
+\citation{kang2019few}
+\citation{finn2017model,vinyals2016matching,snell2017prototypical}
+\citation{ren2015faster}
+\citation{he2016deep}
+\citation{simonyan2014very}
+\citation{ren2015faster}
+\citation{gidaris2018dynamic,qi2018low,chen2019closer}
+\newlabel{sec:tfa}{{3.1}{3}{}{subsection.3.1}{}}
+\newlabel{eq:loss}{{1}{3}{}{equation.3.1}{}}
+\citation{kang2019few}
+\citation{yan2019meta}
+\citation{wang2019meta}
+\citation{vinyals2016matching}
+\citation{kang2019few}
+\citation{kang2019few}
+\citation{kang2019few}
+\citation{kang2019few}
+\citation{wang2019meta}
+\citation{wang2019meta}
+\citation{wang2019meta}
+\citation{wang2019meta}
+\citation{yan2019meta}
+\citation{yan2019meta}
+\citation{yan2019meta}
+\citation{yan2019meta}
+\citation{ren2015faster}
+\citation{he2016deep}
+\citation{lin2016feature}
+\citation{kang2019few,yan2019meta,wang2019meta}
+\citation{kang2019few}
+\newlabel{fig:meta_arch}{{2}{4}{Abstraction of the meta-learning based few-shot object detectors. A meta-learner is introduced to acquire task-level meta information and help the model generalize to novel classes through feature re-weighting (\textit {e.g.}, FSRW and Meta R-CNN) or weight generation (\textit {e.g.}, MetaDet). A two-stage training approach (meta-training and meta fine-tuning) with episodic learning is commonly adopted}{figure.2}{}}
+\newlabel{sec:meta}{{3.2}{4}{}{subsection.3.2}{}}
+\newlabel{sec:exist_benchmark}{{4.1}{4}{}{subsection.4.1}{}}
+\citation{kang2019few}
+\citation{yan2019meta}
+\citation{yan2019meta}
+\citation{yan2019meta}
+\citation{yan2019meta}
+\citation{yan2019meta}
+\citation{yan2019meta}
+\citation{yan2019meta}
+\newlabel{tab:main_voc}{{1}{5}{{Few-shot detection performance (mAP50) on the PASCAL VOC dataset.} We evaluate the performance on three different sets of novel classes. Our approach consistently outperforms baseline methods by a large margin (about 2$\sim $20 points), especially when the number of shots is low. FRCN stands for Faster R-CNN. \model w/ cos is our approach with a cosine similarity based box classifier. \vspace {1mm}}{table.1}{}}
+\newlabel{tab:voc_base}{{2}{5}{{Few-shot detection performance for the base and novel classes on Novel Set 1 of the PASCAL VOC dataset.} Our approach outperforms baselines on both base and novel classes and does not degrade the performance on the base classes greatly.\vspace {1mm}}{table.2}{}}
+\citation{kang2019few}
+\citation{wang2019meta}
+\citation{yan2019meta}
+\citation{yan2019meta}
+\citation{gupta2019lvis}
+\citation{gupta2019lvis}
+\citation{gupta2019lvis}
+\citation{gupta2019lvis}
+\citation{gupta2019lvis}
+\citation{gupta2019lvis}
+\citation{gupta2019lvis}
+\citation{gupta2019lvis}
+\citation{gupta2019lvis}
+\newlabel{fig:avg-ap}{{3}{6}{Cumulative means with 95\% confidence intervals across 40 repeated runs, computed on the novel classes of the first split of PASCAL VOC. The means and variances become stable after around 30 runs}{figure.3}{}}
+\newlabel{tab:main_coco}{{3}{6}{{Few-shot detection performance for the novel categories on the COCO dataset.} Our approach consistently outperforms baseline methods across all shots and metrics.\vspace {2mm}}{table.3}{}}
+\newlabel{sec:revised_bench}{{4.2}{6}{}{subsection.4.2}{}}
+\newlabel{tab:lvis_bench}{{4}{7}{Generalized object detection benchmarks on LVIS. We compare our approach to the baselines provided in LVIS~\cite {gupta2019lvis}. Our approach outperforms the corresponding baseline across all metrics, backbones, and sampling schemes. \vspace {1mm}}{table.4}{}}
+\newlabel{fig:voc_bench}{{4}{7}{Generalized object detection benchmarks on PASCAL VOC. For each metric, we report the average and 95\% confidence interval computed over 30 random samples}{figure.4}{}}
+\newlabel{sec:vis}{{4.3}{7}{}{subsection.4.3}{}}
+\newlabel{fig:coco_bench}{{5}{8}{Generalized object detection benchmarks on COCO. For each metric, we report the average and 95\% confidence interval computed over 10 random samples}{figure.5}{}}
+\newlabel{fig:det-vis}{{6}{8}{Success (green boxes) and failure (red boxes) cases of our approach on novel classes from split 1 of PASCAL VOC (bird, bus, cow, sofa, and motorbike) and COCO (bird, cat, dog, train, and bottle). The black boxes are detected objects of irrelevant classes, which can be ignored. \vspace {1mm}}{figure.6}{}}
+\newlabel{tab:weight_init}{{5}{8}{Ablation of weight initialization of the novel classifier. \vspace {2mm}}{table.5}{}}
+\bibstyle{icml2020}
+\bibdata{references}
+\bibcite{chen2019closer}{{1}{2019}{{Chen et~al.}}{{Chen, Liu, Kira, Wang, and Huang}}}
+\bibcite{dhillon2019baseline}{{2}{2019}{{Dhillon et~al.}}{{Dhillon, Chaudhari, Ravichandran, and Soatto}}}
+\bibcite{pascal-voc-2007}{{3}{2007}{{Everingham et~al.}}{{Everingham, Van~Gool, Williams, Winn, and Zisserman}}}
+\bibcite{finn2017model}{{4}{2017}{{Finn et~al.}}{{Finn, Abbeel, and Levine}}}
+\bibcite{gidaris2018dynamic}{{5}{2018}{{Gidaris \& Komodakis}}{{Gidaris and Komodakis}}}
+\bibcite{gupta2019lvis}{{6}{2019}{{Gupta et~al.}}{{Gupta, Dollar, and Girshick}}}
+\bibcite{hariharan2017low}{{7}{2017}{{Hariharan \& Girshick}}{{Hariharan and Girshick}}}
+\bibcite{he2016deep}{{8}{2016}{{He et~al.}}{{He, Zhang, Ren, and Sun}}}
+\bibcite{kang2019few}{{9}{2019}{{Kang et~al.}}{{Kang, Liu, Wang, Yu, Feng, and Darrell}}}
+\bibcite{koch2015siamese}{{10}{2015}{{Koch}}{{}}}
+\bibcite{landau1988importance}{{11}{1988}{{Landau et~al.}}{{Landau, Smith, and Jones}}}
+\bibcite{Lin2014MicrosoftCC}{{12}{2014}{{Lin et~al.}}{{Lin, Maire, Belongie, Hays, Perona, Ramanan, Doll{\'a}r, and Zitnick}}}
+\bibcite{lin2016feature}{{13}{2017}{{Lin et~al.}}{{Lin, Dollar, Girshick, He, Hariharan, and Belongie}}}
+\bibcite{nichol2018reptile}{{14}{2018}{{Nichol et~al.}}{{Nichol, Achiam, and Schulman}}}
+\bibcite{qi2018low}{{15}{2018}{{Qi et~al.}}{{Qi, Brown, and Lowe}}}
+\bibcite{ren2015faster}{{16}{2015}{{Ren et~al.}}{{Ren, He, Girshick, and Sun}}}
+\bibcite{rusu2018meta}{{17}{2018}{{Rusu et~al.}}{{Rusu, Rao, Sygnowski, Vinyals, Pascanu, Osindero, and Hadsell}}}
+\bibcite{samuelson2005they}{{18}{2005}{{Samuelson \& Smith}}{{Samuelson and Smith}}}
+\bibcite{simonyan2014very}{{19}{2014}{{Simonyan \& Zisserman}}{{Simonyan and Zisserman}}}
+\bibcite{smith2002object}{{20}{2002}{{Smith et~al.}}{{Smith, Jones, Landau, Gershkoff-Stowe, and Samuelson}}}
+\newlabel{tab:cos_scale}{{6}{9}{Ablation of scaling factor of cosine similarity. \vspace {1mm}}{table.6}{}}
+\bibcite{snell2017prototypical}{{21}{2017}{{Snell et~al.}}{{Snell, Swersky, and Zemel}}}
+\bibcite{vinyals2016matching}{{22}{2016}{{Vinyals et~al.}}{{Vinyals, Blundell, Lillicrap, Wierstra, et~al.}}}
+\bibcite{wang2019tafe}{{23}{2019{a}}{{Wang et~al.}}{{Wang, Yu, Wang, Darrell, and Gonzalez}}}
+\bibcite{wang2019meta}{{24}{2019{b}}{{Wang et~al.}}{{Wang, Ramanan, and Hebert}}}
+\bibcite{yan2019meta}{{25}{2019}{{Yan et~al.}}{{Yan, Chen, Xu, Wang, Liang, and Lin}}}
+\citation{kang2019few}
+\citation{wang2019meta}
+\citation{kang2019few}
+\citation{kang2019few}
+\citation{kang2019few}
+\citation{kang2019few}
+\citation{kang2019few}
+\citation{kang2019few}
+\citation{kang2019few}
+\citation{kang2019few}
+\citation{kang2019few}
+\citation{kang2019few}
+\citation{kang2019few}
+\citation{kang2019few}
+\citation{kang2019few,yan2019meta,wang2019meta}
+\newlabel{tab:voc_bench}{{7}{11}{Generalized object detection benchmarks on PASCAL VOC. For each metric, we report the average and 95\% confidence interval computed over 30 random samples. \vspace {1mm}}{table.7}{}}
+\newlabel{tab:coco_bench}{{8}{12}{Generalized object detection benchmarks on COCO. For each metric, we report the average and 95\% confidence interval computed over 10 random samples. \vspace {1mm}}{table.8}{}}
+\newlabel{fig:avg-ap-sup}{{7}{12}{Cumulative means with 95\% confidence intervals across 40 repeated runs, computed on the novel classes of all three splits of PASCAL VOC. The means and variances become stable after around 30 runs}{figure.7}{}}
+\newlabel{fig:coco-avg-ap-sup}{{8}{12}{Cumulative means with 95\% confidence intervals across 10 repeated runs, computed on the novel classes of COCO}{figure.8}{}}
