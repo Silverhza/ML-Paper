@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.8.7)  25 MAY 2021 23:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.8.7)  26 MAY 2021 13:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -636,11 +636,11 @@ File: figs/correct/miao_res.jpg Graphic file (type jpg)
 <use figs/correct/miao_res.jpg>
 Package pdftex.def Info: figs/correct/miao_res.jpg  used on input line 240.
 (pdftex.def)             Requested size: 72.26999pt x 54.20236pt.
-<figs/correct/sjd_res.jpg, id=310, 3011.25pt x 4015.0pt>
-File: figs/correct/sjd_res.jpg Graphic file (type jpg)
-<use figs/correct/sjd_res.jpg>
-Package pdftex.def Info: figs/correct/sjd_res.jpg  used on input line 240.
-(pdftex.def)             Requested size: 72.26999pt x 96.30682pt.
+<figs/correct/2umb_res.jpg, id=310, 4015.0pt x 3011.25pt>
+File: figs/correct/2umb_res.jpg Graphic file (type jpg)
+<use figs/correct/2umb_res.jpg>
+Package pdftex.def Info: figs/correct/2umb_res.jpg  used on input line 240.
+(pdftex.def)             Requested size: 72.26999pt x 54.17259pt.
 <figs/partial/bird_res.jpg, id=311, 642.4pt x 428.60126pt>
 File: figs/partial/bird_res.jpg Graphic file (type jpg)
 <use figs/partial/bird_res.jpg>
@@ -677,30 +677,40 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [5]) (/Users/hezian/Desktop/ML-Paper/conclusion.tex) (/Users/hezian/Desktop/ML-Paper/main.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6 </Users/hezian/Desktop/ML-Paper/figs/coco_benchmark_full.pdf>] [7 </Users/hezian/Desktop/ML-Paper/figs/correct/clock_res.jpg> </Users/hezian/Desktop/ML-Paper/figs/correct/miao_res.jpg> </Users/hezian/Desktop/ML-Paper/figs/correct/sjd_res.jpg> </Users/hezian/Desktop/ML-Paper/figs/partial/bird_res.jpg> </Users/hezian/Desktop/ML-Paper/figs/partial/fruit_res.jpg> </Users/hezian/Desktop/ML-Paper/figs/partial/horse_res.jpg> </Users/hezian/Desktop/ML-Paper/figs/wrong/cat_dog_res.jpg> </Users/hezian/Desktop/ML-Paper/figs/wrong/many_dogs_res.jpg> </Users/hezian/Desktop/ML-Paper/figs/wrong/three_cat_res.jpg>]
+ [6 </Users/hezian/Desktop/ML-Paper/figs/coco_benchmark_full.pdf>] [7 </Users/hezian/Desktop/ML-Paper/figs/correct/clock_res.jpg> </Users/hezian/Desktop/ML-Paper/figs/correct/miao_res.jpg> </Users/hezian/Desktop/ML-Paper/figs/correct/2umb_res.jpg> </Users/hezian/Desktop/ML-Paper/figs/partial/bird_res.jpg> </Users/hezian/Desktop/ML-Paper/figs/partial/fruit_res.jpg> </Users/hezian/Desktop/ML-Paper/figs/partial/horse_res.jpg> </Users/hezian/Desktop/ML-Paper/figs/wrong/cat_dog_res.jpg> </Users/hezian/Desktop/ML-Paper/figs/wrong/many_dogs_res.jpg> </Users/hezian/Desktop/ML-Paper/figs/wrong/three_cat_res.jpg>]
 Underfull \hbox (badness 3758) in paragraph at lines 81--84
 []\OT1/ptm/m/n/10 (+20) Nichol, A., Achiam, J., and Schul-man, J.  On
  []
 
-) (/Users/hezian/Desktop/ML-Paper/appendix.tex [8]
+) (/Users/hezian/Desktop/ML-Paper/appendix.tex
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figs/all_avgap_std.pdf, id=440, 1456.89607pt x 603.73442pt>
+
+Underfull \vbox (badness 1472) has occurred while \output is active []
+
+ [8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (14.25084pt too high) has occurred while \output is active []
+
+ [9]
+<figs/all_avgap_std.pdf, id=446, 1456.89607pt x 603.73442pt>
 File: figs/all_avgap_std.pdf Graphic file (type pdf)
 <use figs/all_avgap_std.pdf>
 Package pdftex.def Info: figs/all_avgap_std.pdf  used on input line 152.
 (pdftex.def)             Requested size: 469.755pt x 194.66371pt.
-<figs/coco_avgap_std.pdf, id=441, 1090.09137pt x 441.79361pt>
+<figs/coco_avgap_std.pdf, id=447, 1090.09137pt x 441.79361pt>
 File: figs/coco_avgap_std.pdf Graphic file (type pdf)
 <use figs/coco_avgap_std.pdf>
 Package pdftex.def Info: figs/coco_avgap_std.pdf  used on input line 162.
 (pdftex.def)             Requested size: 390.25948pt x 158.16248pt.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 152.
- [9
+ [10
 
-] [10] [11 </Users/hezian/Desktop/ML-Paper/figs/all_avgap_std.pdf> </Users/hezian/Desktop/ML-Paper/figs/coco_avgap_std.pdf
+] [11 </Users/hezian/Desktop/ML-Paper/figs/all_avgap_std.pdf> </Users/hezian/Desktop/ML-Paper/figs/coco_avgap_std.pdf
 
 pdfTeX warning: pdflatex (file /Users/hezian/Desktop/ML-Paper/figs/coco_avgap_std.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
@@ -714,14 +724,14 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
  ) 
 Here is how much of TeX's memory you used:
  10625 strings out of 492649
- 160001 string characters out of 6129623
- 446384 words of memory out of 5000000
+ 160006 string characters out of 6129623
+ 458461 words of memory out of 5000000
  13950 multiletter control sequences out of 15000+600000
  42570 words of font info for 220 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,13n,55p,916b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/hezian/Desktop/ML-Paper/main.pdf (11 pages, 4141051 bytes).
+Output written on /Users/hezian/Desktop/ML-Paper/main.pdf (11 pages, 4909442 bytes).
 PDF statistics:
  595 PDF objects out of 1000 (max. 8388607)
  414 compressed objects within 5 object streams
