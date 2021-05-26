@@ -13,8 +13,8 @@ The object detection task is much harder than the image classification task, sin
     \centering
     \includegraphics[width=\linewidth]{figs/TFA_fig1.pdf}
     \label{fig:tfa_arch}
-    \vspace{-1cm}
-    \caption{Illustration of our two-stage fine-tuning approach (\model). In the base training stage, the entire object detector, including both the feature extractor $\mathcal{F}$ and the box predictor, are jointly trained on the base classes. In the few-shot fine-tuning stage, the feature extractor components are fixed and only the box predictor is fine-tuned on a balanced subset consisting of both the base and novel classes.}
+    \vspace{-0.8cm}
+    \caption{The two-stage fine-tuning approach (\model). In the base training stage, the entire object detector are jointly trained on the base classes. In the second stage, the labeled feature extractor is kept intact and only the last layer, i.e. box predictor, is fine-tuned on a balanced set consisting sampled base and novel classes.}
 \end{figure*}
 
 In this project, we try to improve the detection results by adopting fine-tuning based approaches. We focus on the schedule of the training procedure and use proper instance-level feature normalization in this project.
