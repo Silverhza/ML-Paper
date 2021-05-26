@@ -1,61 +1,34 @@
 \section{Introduction}
-Machine perception systems have witnessed significant progress in the past years.
-% thanks to the emergence of convolutional neural networks.
-% ~\cite{lecun1998gradient,he2016deep,ren2015faster}.
-Yet, our ability to train models that generalize to novel concepts without abundant labeled data is still far from satisfactory  when compared to human visual systems. 
-Even a toddler can easily recognize a new concept with very little instruction~\cite{landau1988importance,samuelson2005they,smith2002object}.
+Nowadays, many tasks can be done by machine perception systems and learning from only a few samples has raised wide attention due to the scarcity of samples in some particular areas. Although some few-shot learning problems has almost been solved, it is still hard to achieve image detection with few training samples, the detection results are still unideal.
 
-The ability to generalize from only a few examples (so called few-shot learning) has become a key area of interest in the machine learning community.
-Many \cite{vinyals2016matching,snell2017prototypical,finn2017model,hariharan2017low,gidaris2018dynamic,wang2019tafe} have explored techniques to transfer knowledge from the data-abundant base classes to the data-scarce novel classes through \emph{meta-learning}. 
-They use simulated few-shot tasks by sampling from base classes during training to learn to learn from the few examples in the novel classes.
+In the prior works, people have tried to achieve few-shot image detection by two approaches
+\begin{enumerate}
+    \item Meta-learning. This approach tries to transfer knowledge learnt from data-abundent classes to data-scarce novel classes so that the model could adapt to the new task more quickly. This method have been used in few-shot image classification for a while but it has not been proved effective in object detection task, which is much more challenging than image classification.
+    \item Metric-learning. This approach tries to build some metrics for the learner so that it can estimate and check the similarities between images, e.g. cosine similarities. Based on the built metrics, the model can try to fit to the input and learn how to detect objects. However, this approach relis on the metric, which may be hard to find a better one.
+\end{enumerate}
 
-However, much of this work has focused on basic image classification tasks. 
-In contrast, few-shot object detection has received far less attention. 
-Unlike image classification, object detection requires the model to not only recognize the object types but also localize the targets among millions of potential regions. This additional subtask substantially
-raises the overall complexity. Several~\cite{kang2019few,yan2019meta,wang2019meta} have attempted to tackle the under-explored few-shot object detection task, where only a few labeled bounding boxes are available for novel classes. These methods attach meta learners to existing object detection networks, following the meta-learning methods for classification. But, current evaluation protocols suffer from statistical unreliability, and the accuracy of baseline methods, especially simple fine-tuning, on few-object detection are not consistent in the literature.
-
-% \fisher{will move.} Meta-learning based approaches seem to be promising in both few-shot classification as well as detection. However, some~\cite{chen2019closer} 
-% raise concerns about the reliability of the results given 
-% that a consistent comparison analysis of different approaches is missing. 
-% Some simple fine-tuning based approaches, which draw little attention in the
-% community, turn out to be more favorable than many prior works that use meta-learning
-% on few-shot image classification~\cite{chen2019closer,dhillon2019baseline}.
-% As for the emerging few-shot object detection task, there is no consensus on the evaluation benchmarks nor a consistent comparison of different approaches due to the increased network complexity, various implementation details, and variances in evaluation protocols.
-
+The object detection task is much harder than the image classification task, since it contains not only classification but also object localization. Researchers ~\cite{kang2019few,yan2019meta,wang2019meta} have attempted to achieve few-shot object detection task, where a few labeled data, far from abundent, is provided to the learner as novel training data. These methods achieved out-of-random performance but their methods are not stable, which means the reproduced results might be far from their reported results.
 
 \begin{figure*}[ht]
     \centering
     \includegraphics[width=\linewidth]{figs/TFA_fig1.pdf}
+    \label{fig:tfa_arch}
     \vspace{-1cm}
     \caption{Illustration of our two-stage fine-tuning approach (\model). In the base training stage, the entire object detector, including both the feature extractor $\mathcal{F}$ and the box predictor, are jointly trained on the base classes. In the few-shot fine-tuning stage, the feature extractor components are fixed and only the box predictor is fine-tuned on a balanced subset consisting of both the base and novel classes.}
-    \label{fig:tfa_arch}
 \end{figure*}
 
-In this work, we propose improved methods to evaluate few-shot object detection. We carefully examine fine-tuning based approaches, which are 
-considered to be under-performing in the previous works~\cite{kang2019few,yan2019meta,wang2019meta}.
-% the standard baseline used in prior work 
-We focus on the training schedule and the instance-level feature normalization of the object detectors in model design and training based on fine-tuning.
+In this project, we try to improve the detection results by adopting fine-tuning based approaches. We focus on the schedule of the training procedure and use proper instance-level feature normalization in this project.
 
-We adopt a two-stage training scheme for fine-tuning as shown in Figure~\ref{fig:tfa_arch}. We first train the entire object detector, such as Faster R-CNN~\cite{ren2015faster}, on the data-abundant base classes, and then only fine-tune the last layers of the detector
-% (\textit{i.e.}, the fully connected layers used as the box classifier and the box regressor)
-on a small balanced training set consisting of both base and novel classes while freezing the other parameters of the model. 
-During the fine-tuning stage, we introduce instance-level feature normalization to the box classifier inspired by~\citet{gidaris2018dynamic,qi2018low,chen2019closer}. 
+The training is composed of two stages, which is shown in Figure~\ref{fig:tfa_arch}. The first stage trains the whole network, e.g. Faster-RCNN, on data-abundent base classes. Then we only train the last layer of the network in the second stage, on a small balanced training set that is composed of both base and novel classes by properly sample data, parameters in other layers of the detector is kept intact during the second stage. We also use instance-level feature normalization in the second stage, which helps the model to diminish some parameter issues introduced by~\citet{gidaris2018dynamic,qi2018low,chen2019closer}.
 
+In our evalution, we find that our method outperfroms all previous few-shot object detection methods, our method can gain 2 $\sim$ 15 percent more accuracy than prior methods, and it even doubled the accuracy in one-shot learning, which dictates the effiction of our method.
 
-We find that this two-stage fine-tuning approach (\model) outperforms all previous
-state-of-the-art meta-learning based methods by 2$\sim$20 points on the existing COCO~\cite{Lin2014MicrosoftCC} benchmarks. 
-When training on a single novel example (one-shot learning), our method can achieve twice
-the accuracy of prior sophisticated state-of-the-art approaches.
+We fixed several issues in the existing training procedures
+\begin{enumerate}
+    \item We try to diminish overfitting by invoking multiple runs on different random samples so that the variance is lower and the results much are more stable.
+    \item We try to keep the accuracy of our method consistent with the paper.
+    \item We report not only the accuracy for novel classes, but also accuracy for base classes and the overall accuracy for all classes, so that one can see that the accuracy (referred to as the generalized few-shot learning setting in the few-shot classification literature~\cite{hariharan2017low,wang2019tafe}) for other classes are not largely affected.
+\end{enumerate}
 
-
-
-Several issues with the existing evaluation protocols prevent consistent model comparisons. The accuracy measurements have high variance, making published comparisons unreliable.  Also, the previous evaluations only report the detection accuracy on the novel classes, and fail to evaluate knowledge retention on the base classes.
-% encouraging knowledge forgetting on base classes.
-
-To resolve these issues, we build new benchmarks on two datasets: COCO and LVIS~\cite{gupta2019lvis}.
-% disjoint groups
-We sample different groups of few-shot training examples for multiple runs of the experiments to obtain a stable accuracy estimation and quantitatively analyze the variances of different evaluation metrics. The new evaluation reports the average precision (AP) on both the base classes and novel classes as well as the mean AP on all classes, referred to as the generalized few-shot learning setting in the few-shot classification literature~\cite{hariharan2017low,wang2019tafe}.
-
-Our fine-tuning approach establishes new states of the art on the benchmarks.  
 On the challenging LVIS dataset, our two-stage training scheme improves the average detection precision of rare classes
-($<$10 images) by $\sim$4 points and common classes (10-100 images) by $\sim$2 points with negligible precision loss for the frequent classes ($>$100 images). 
+($<$10 images) by $\sim$4 points and common classes (10-100 images) by $\sim$2 points with negligible precision loss for the frequent classes ($>$100 images).
