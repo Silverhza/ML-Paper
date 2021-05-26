@@ -33,7 +33,7 @@ which are loss of the RPN network, cross-entropy loss for the box classifier and
     \label{fig:meta_arch}
 \end{figure*}
 
-\minisection{Cosine similarity for box classifier.} The design of the classifier is based on the cosine similarity function, inspired by ~\citet{gidaris2018dynamic,qi2018low,chen2019closer}.
+\minisection{Cosine similarity for box classifier.} The design of the classifier is based on the cosine similarity function, inspired by ~\citet{gidaris2018dynamic,qi2018low}.
 The weight matrix of the box classifier is $W\in\mathbb{R}^{d\times c}$, where $w_c\in\mathbb{R}^d$ is the per-class weight vector. The output of $\mathcal{C}$ is scaled similarity scores $S$
 \begin{equation}
     s_{i,j} = \frac{\alpha \mathcal{F}(x)_i^\top w_j}{\|\mathcal{F}(x)_i\| \|w_j\|},
