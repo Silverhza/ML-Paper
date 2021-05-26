@@ -1,16 +1,16 @@
 \section{Experiments}
 
-In this section, we conduct extensive comparisons with previous methods on the existing 
-few-shot object detection benchmarks using COCO, where our approach can obtain
-about 2$\sim$20 points improvement in all settings (Section~\ref{sec:exist_benchmark}). We then introduce a new benchmark on three datasets (COCO and LVIS) with revised evaluation protocols to address the unreliability of previous benchmarks (Section~\ref{sec:revised_bench}). We also provide various ablation studies and visualizations in Section~\ref{sec:vis}. 
+We evaluate our method on two datasets
+\begin{enumerate}
+	\item COCO
+	\item LVIS
+\end{enumerate}
+We then provide some quantitative results and visualization results in this section.
 
 \minisection{Implementation details.}
-% All of our models are implemented on the Detectron2 framework \cite{wu2019detectron2}.
-We use Faster R-CNN~\cite{ren2015faster} as our base detector and Resnet-101~\cite{he2016deep} with a Feature Pyramid Network~\cite{lin2016feature} as the backbone.
-% For hyperparameters related to the model architecture, we use the default parameters provided by Detectron2.
-All models are trained using SGD with a mini-batch size of 16, momentum of 0.9, and weight decay of 0.0001.
-A learning rate of 0.02 is used during base training and 0.001 during few-shot fine-tuning.
-For more details, the code is available at~\url{https://github.com/ucbdrive/few-shot-object-detection}.
+We select Faster R-CNN~\cite{ren2015faster} as our base detector and use Resnet-101~\cite{he2016deep} with a Feature Pyramid Network~\cite{lin2016feature} as the backbone of our method.
+All models are trained using SGD with a mini-batch size of 16, momentum of 0.9, and weight decay of 0.0001. A learning rate of 0.02 is used during base training and 0.001 during few-shot fine-tuning. 
+For hyperparameters related to the model architecture, we use the default parameters provided by Detectron2.
 
 \subsection{Existing few-shot object detection benchmark}
 \label{sec:exist_benchmark}

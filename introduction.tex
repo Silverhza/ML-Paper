@@ -19,7 +19,7 @@ The object detection task is much harder than the image classification task, sin
 
 In this project, we try to improve the detection results by adopting fine-tuning based approaches. We focus on the schedule of the training procedure and use proper instance-level feature normalization in this project.
 
-The training is composed of two stages, which is shown in Figure~\ref{fig:tfa_arch}. The first stage trains the whole network, e.g. Faster-RCNN, on data-abundent base classes. Then we only train the last layer of the network in the second stage, on a small balanced training set that is composed of both base and novel classes by properly sample data, parameters in other layers of the detector is kept intact during the second stage. We also use instance-level feature normalization in the second stage, which helps the model to diminish some parameter issues introduced by~\citet{gidaris2018dynamic,qi2018low,chen2019closer}.
+The training is composed of two stages, which is shown in Figure~\ref{fig:tfa_arch}. The first stage trains the whole network, e.g. Faster R-CNN, on data-abundent base classes. Then we only train the last layer of the network in the second stage, on a small balanced training set that is composed of both base and novel classes by properly sample data, parameters in other layers of the detector is kept intact during the second stage. We also use instance-level feature normalization in the second stage, which helps the model to diminish some parameter issues introduced by~\citet{gidaris2018dynamic,qi2018low,chen2019closer}.
 
 In our evalution, we find that our method outperfroms all previous few-shot object detection methods, our method can gain 2 $\sim$ 15 percent more accuracy than prior methods, and it even doubled the accuracy in one-shot learning, which dictates the effiction of our method.
 
@@ -29,6 +29,3 @@ We fixed several issues in the existing training procedures
     \item We try to keep the accuracy of our method consistent with the paper.
     \item We report not only the accuracy for novel classes, but also accuracy for base classes and the overall accuracy for all classes, so that one can see that the accuracy (referred to as the generalized few-shot learning setting in the few-shot classification literature~\cite{hariharan2017low,wang2019tafe}) for other classes are not largely affected.
 \end{enumerate}
-
-On the challenging LVIS dataset, our two-stage training scheme improves the average detection precision of rare classes
-($<$10 images) by $\sim$4 points and common classes (10-100 images) by $\sim$2 points with negligible precision loss for the frequent classes ($>$100 images).
