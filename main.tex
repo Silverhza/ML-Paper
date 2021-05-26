@@ -73,7 +73,7 @@
 \begin{document}
 
 \twocolumn[
-\icmltitle{Frustratingly Simple Few-Shot Object Detection} % TD I edited out "approach to"
+\icmltitle{CS282 Machine Learning Report} % TD I edited out "approach to"
 
 % It is OKAY to include author information, even for blind
 % submissions: the style file will automatically remove it for you
@@ -91,18 +91,14 @@
 \icmlsetsymbol{equal}{*}
 
 \begin{icmlauthorlist}
-\icmlauthor{Xin Wang}{equal,to}
-\icmlauthor{Thomas E. Huang}{equal,goo}
-\icmlauthor{Trevor Darrell}{to}
-\icmlauthor{Joseph E. Gonzalez}{to}
-\icmlauthor{Fisher Yu}{to}
+\icmlauthor{Junda Shen}{equal,to}
+\icmlauthor{Zian He}{equal,to}
 \end{icmlauthorlist}
 
-\icmlaffiliation{to}{EECS, UC Berkeley}
-\icmlaffiliation{goo}{EECS, University of Michigan}
+\icmlaffiliation{to}{SIST, Shanghaitech University}
 
-\icmlcorrespondingauthor{Xin Wang}{xinw@berkeley.edu}
-\icmlcorrespondingauthor{Thomas E. Huang}{thomaseh@umich.edu}
+\icmlcorrespondingauthor{Junda Shen}{shenjd@shanghaitech.edu.cn}
+\icmlcorrespondingauthor{Zian He}{heza@shanghaitech.edu.cn}
 % \icmlcorrespondingauthor{Fisher Yu}{i@yf.io}
 
 % You may provide any keywords that you
@@ -125,8 +121,7 @@
 %\printAffiliationsAndNotice{\icmlEqualContribution} % otherwise use the standard text.
 
 \begin{abstract}
-Detecting rare objects from a few examples is an emerging problem. Prior works show meta-learning is a promising approach. But, fine-tuning techniques have drawn scant attention.
-We find that fine-tuning only the last layer of existing detectors on rare classes is crucial to the few-shot object detection task. Such a simple approach outperforms the meta-learning methods by roughly  2$\sim$20 points on current benchmarks and sometimes even doubles the accuracy of the prior methods. However, the high variance in the few samples often leads to the unreliability of existing benchmarks. We revise the evaluation protocols by sampling multiple groups of training examples to obtain stable comparisons and build new benchmarks based on two datasets: COCO and LVIS. Again, our fine-tuning approach establishes a new state of the art on the revised benchmarks. The code as well as the pretrained models are available at~\url{https://github.com/ucbdrive/few-shot-object-detection}.
+In this project, we try to conquer the few-shot object detection problem by fine-tuning the last layer of some existing convolutional object detectors, e.g. Faster-RCNN. The prior methods usually encounter high variance problems which made them unreliable. However, we used an elegant sampling method so that the results are stable and the overfitting problem is diminished. We evaluated our approach on COCO and LVIS datasets, which shows that our method outperforms prior methods by 2 ~ 15 percent. Since this method does not propose a new architecture, the code is based on and modified from the detectron2 package, you can find the original code at ~\url{https://github.com/facebookresearch/detectron2}.
 \end{abstract}
 
 \input{introduction.tex}
