@@ -29,7 +29,7 @@ which are loss of the RPN network, cross-entropy loss for the box classifier and
     \centering
     \includegraphics[width=\linewidth]{figs/TFA_fig2.pdf}
     \vspace{-8mm}
-    \caption{Abstraction of the meta-learning based few-shot object detectors. A meta-learner is introduced to acquire task-level meta information and help the model generalize to novel classes through feature re-weighting (\textit{e.g.}, FSRW and Meta R-CNN) or weight generation (\textit{e.g.}, MetaDet). A two-stage training approach (meta-training and meta fine-tuning) with episodic learning is commonly adopted.}
+    \caption{Meta-learning based few-shot object detectors. A meta-learner is used to help the model generalize to novel classes. A two-stage training approach is adopted.}
     \label{fig:meta_arch}
 \end{figure*}
 
@@ -43,4 +43,4 @@ where $s_{i,j}$ is the similarity calculated between the $i$-th proposed object 
 
 \subsection{Compared Meta-learning with Fine-tuning}
 \label{sec:meta}
-Both the meta-learning method and our method are composed of two stages. However, since our fine-tuning method only fine-tunes the last layer of the network, our method is much more memory efficient than the meta-learning method.
+Both the meta-learning method (See Figure~\ref{fig:meta_arch}) and our method are composed of two stages. However, since our fine-tuning method only fine-tunes the last layer of the network, our method is much more memory efficient than the meta-learning method.
