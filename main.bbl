@@ -59,10 +59,9 @@ Ren, S., He, K., Girshick, R., and Sun, J.
 \newblock In \emph{Advances in neural information processing systems}, pp.\
   91--99, 2015.
 
-\bibitem[Simonyan \& Zisserman(2014)Simonyan and Zisserman]{simonyan2014very}
-Simonyan, K. and Zisserman, A.
-\newblock Very deep convolutional networks for large-scale image recognition.
-\newblock \emph{arXiv preprint arXiv:1409.1556}, 2014.
+\bibitem[Wang et~al.()Wang, Huang, Darrell, Gonzalez, and Yu]{wang2020few}
+Wang, X., Huang, T.~E., Darrell, T., Gonzalez, J.~E., and Yu, F.
+\newblock Frustratingly simple few-shot object detection.
 
 \bibitem[Wang et~al.(2019{\natexlab{a}})Wang, Yu, Wang, Darrell, and
   Gonzalez]{wang2019tafe}

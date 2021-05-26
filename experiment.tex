@@ -51,16 +51,9 @@ We report the average AP and AP75 of the 20 novel classes on COCO in Table~\ref{
 		\begin{tabular}{c|c|c|ccc|ccc|ccc}
 			\toprule
 			Method & Backbone  & Repeated sampling & AP & AP50 & AP75 & APs & APm & APl & APr & APc & APf \\\midrule
-			Joint training~\cite{gupta2019lvis}  & \multirow{3}{*}{FRCN w/ R-50} && 19.8 & 33.6 & 20.4 & 17.1 & 25.9 & 33.2 & 2.1 & 18.5 & \textbf{28.5}  \\
-			\model w/ fc (Ours) &  &  & 22.6 & 37.5 & 22.6 & 17.5 & 27.2 & 36.3 & 14.2 & 21.0 & 26.8 \\
-			\model w/ cos (Ours) &  &  & \cellcolor{Gray} 22.9 & \cellcolor{Gray} 37.5 & \cellcolor{Gray} 23.6 & \cellcolor{Gray} 19.0 & \cellcolor{Gray} 27.5 & \cellcolor{Gray} 37.0 & \cellcolor{Gray} 15.5 & \cellcolor{Gray} 20.8 & \cellcolor{Gray} 27.9 \\ \midrule
 			Joint training~\cite{gupta2019lvis}  & \multirow{3}{*}{FRCN w/ R-50}  &\multirow{3}{*}{\checkmark} & 23.1 & 38.4 & 24.3 & 18.1 & 28.3 & 36.0 & 13.0 & 22.0 & 28.4 \\ 
 			\model w/ fc (Ours) &  & & 24.0 & 40.0 & 26.0 & 19.3 & 28.9 & 36.5 & 15.0 & 24.1 & 28.1 \\
 			\model w/ cos (Ours) & &&\cellcolor{Gray} \textbf{24.5} & \cellcolor{Gray}\textbf{40.2} & \cellcolor{Gray}\textbf{26.4} & \cellcolor{Gray}\textbf{20.1} & \cellcolor{Gray}\textbf{29.5} & \cellcolor{Gray}\textbf{38.5} &\cellcolor{Gray}\textbf{17.1} & \cellcolor{Gray}\textbf{24.5} & \cellcolor{Gray}27.8 \\ \midrule\midrule
-			Joint training~\cite{gupta2019lvis}  & \multirow{3}{*}{FRCN w/ R-101} & & 21.9 & 35.8 & 23.0 & 18.8 & 28.0 & 36.2 & 3.0 & 20.8 & \textbf{30.8}  \\
-			\model w/ fc (Ours) &  & & 24.0 & 39.2 & 25.1 & 19.2 & 29.8 & 38.8 & 15.8 & 22.7 & 29.1  \\
-			\model w/ cos (Ours) &  & & \cellcolor{Gray} 24.5 & \cellcolor{Gray} 39.6 & \cellcolor{Gray} 26.0 & \cellcolor{Gray} 20.3 & \cellcolor{Gray} 30.6 & \cellcolor{Gray} 39.8 & \cellcolor{Gray} \textbf{18.3} & \cellcolor{Gray} 21.5 & \cellcolor{Gray} 30.1
-  \\\midrule
 			Joint training~\cite{gupta2019lvis} & \multirow{3}{*}{FRCN w/ R-101}  & \multirow{3}{*}{\checkmark} & 24.7 & 40.5 & 26.0 & 19.0 & 30.3 & 38.0 & 13.4 & 24.0 & 30.1 \\ 
 			\model w/ fc (Ours) &  & & 25.6 & \textbf{41.8} & 26.8 & 20.0 & 31.0 & 39.3 & 15.7 & 26.1 & 28.3 \\
 			\model w/ cos (Ours) & & & \cellcolor{Gray} \textbf{26.5} & \cellcolor{Gray}\textbf{41.9} & \cellcolor{Gray}\textbf{27.6} & \cellcolor{Gray}\textbf{20.1} & \cellcolor{Gray}\textbf{32.2} & \cellcolor{Gray}\textbf{40.0} & \cellcolor{Gray}17.2 & \cellcolor{Gray}\textbf{26.3} & \cellcolor{Gray}29.8 \\ 
@@ -85,7 +78,7 @@ We visualize some of the detection results in Figure~\ref{fig:det-vis}.
 	\centering
 	\footnotesize
 	\setlength{\tabcolsep}{0.1em}
-	\adjustbox{width=.85\linewidth}{
+	\adjustbox{width=.8\linewidth}{
 		\begin{tabular}{ccccccc}
 			\multirow{3}{*}{} &
 			\rotatebox{90}{\hspace{5mm}\tiny{\texttt{success}}} &
