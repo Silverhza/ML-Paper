@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2020/W32TeX)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: icml2020.bst
+Database file #1: references.bib
+You've used 13 entries,
+            2773 wiz_defined-function locations,
+            655 strings with 7011 characters,
+and the built_in function-call counts, 8392 in all, are:
+= -- 756
+> -- 498
+< -- 13
++ -- 167
+- -- 153
+* -- 643
+:= -- 1170
+add.period$ -- 39
+call.type$ -- 13
+change.case$ -- 90
+chr.to.int$ -- 12
+cite$ -- 26
+duplicate$ -- 405
+empty$ -- 662
+format.name$ -- 172
+if$ -- 1854
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 13
+newline$ -- 73
+num.names$ -- 52
+pop$ -- 211
+preamble$ -- 1
+purify$ -- 77
+quote$ -- 0
+skip$ -- 362
+stack$ -- 0
+substring$ -- 402
+swap$ -- 130
+text.length$ -- 10
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 143
+warning$ -- 0
+while$ -- 69
+width$ -- 0
+write$ -- 173
