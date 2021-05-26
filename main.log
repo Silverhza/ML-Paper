@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.3.1)  26 MAY 2021 21:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.3.1)  26 MAY 2021 22:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -594,7 +594,7 @@ File: omlptm.fd
 LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <9> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 120.
  (./introduction.tex
-<figs/TFA_fig1.pdf, id=10, 1373.13pt x 325.215pt>
+<figs/TFA_fig1.pdf, id=8, 1373.13pt x 325.215pt>
 File: figs/TFA_fig1.pdf Graphic file (type pdf)
 <use figs/TFA_fig1.pdf>
 Package pdftex.def Info: figs/TFA_fig1.pdf  used on input line 14.
@@ -604,7 +604,7 @@ Package pdftex.def Info: figs/TFA_fig1.pdf  used on input line 14.
 
 
 ]) (./method.tex
-<figs/TFA_fig2.pdf, id=47, 1373.13pt x 303.1325pt>
+<figs/TFA_fig2.pdf, id=38, 1373.13pt x 303.1325pt>
 File: figs/TFA_fig2.pdf Graphic file (type pdf)
 <use figs/TFA_fig2.pdf>
 Package pdftex.def Info: figs/TFA_fig2.pdf  used on input line 30.
@@ -618,58 +618,52 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `pcr' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<figs/correct/clock_res.jpg, id=129, 451.6875pt x 321.2pt>
+<figs/correct/clock_res.jpg, id=118, 451.6875pt x 321.2pt>
 File: figs/correct/clock_res.jpg Graphic file (type jpg)
 <use figs/correct/clock_res.jpg>
-Package pdftex.def Info: figs/correct/clock_res.jpg  used on input line 92.
+Package pdftex.def Info: figs/correct/clock_res.jpg  used on input line 85.
 (pdftex.def)             Requested size: 72.26999pt x 51.38814pt.
-<figs/correct/miao_res.jpg, id=130, 1027.84pt x 770.88pt>
+<figs/correct/miao_res.jpg, id=119, 1027.84pt x 770.88pt>
 File: figs/correct/miao_res.jpg Graphic file (type jpg)
 <use figs/correct/miao_res.jpg>
-Package pdftex.def Info: figs/correct/miao_res.jpg  used on input line 92.
+Package pdftex.def Info: figs/correct/miao_res.jpg  used on input line 85.
 (pdftex.def)             Requested size: 72.26999pt x 54.20236pt.
-<figs/correct/2umb_res.jpg, id=131, 4015.0pt x 3011.25pt>
+<figs/correct/2umb_res.jpg, id=120, 4015.0pt x 3011.25pt>
 File: figs/correct/2umb_res.jpg Graphic file (type jpg)
 <use figs/correct/2umb_res.jpg>
-Package pdftex.def Info: figs/correct/2umb_res.jpg  used on input line 92.
+Package pdftex.def Info: figs/correct/2umb_res.jpg  used on input line 85.
 (pdftex.def)             Requested size: 72.26999pt x 54.17259pt.
-<figs/partial/bird_res.jpg, id=132, 642.4pt x 428.60126pt>
+<figs/partial/bird_res.jpg, id=121, 642.4pt x 428.60126pt>
 File: figs/partial/bird_res.jpg Graphic file (type jpg)
 <use figs/partial/bird_res.jpg>
-Package pdftex.def Info: figs/partial/bird_res.jpg  used on input line 94.
+Package pdftex.def Info: figs/partial/bird_res.jpg  used on input line 87.
 (pdftex.def)             Requested size: 72.26999pt x 48.21228pt.
-<figs/partial/fruit_res.jpg, id=133, 642.4pt x 481.8pt>
+<figs/partial/fruit_res.jpg, id=122, 642.4pt x 481.8pt>
 File: figs/partial/fruit_res.jpg Graphic file (type jpg)
 <use figs/partial/fruit_res.jpg>
-Package pdftex.def Info: figs/partial/fruit_res.jpg  used on input line 94.
+Package pdftex.def Info: figs/partial/fruit_res.jpg  used on input line 87.
 (pdftex.def)             Requested size: 72.26999pt x 54.19647pt.
-<figs/partial/horse_res.jpg, id=134, 642.4pt x 248.93pt>
+<figs/partial/horse_res.jpg, id=123, 642.4pt x 248.93pt>
 File: figs/partial/horse_res.jpg Graphic file (type jpg)
 <use figs/partial/horse_res.jpg>
-Package pdftex.def Info: figs/partial/horse_res.jpg  used on input line 94.
+Package pdftex.def Info: figs/partial/horse_res.jpg  used on input line 87.
 (pdftex.def)             Requested size: 72.26999pt x 28.00151pt.
-<figs/wrong/cat_dog_res.jpg, id=135, 1284.8pt x 1027.84pt>
+<figs/wrong/cat_dog_res.jpg, id=124, 1284.8pt x 1027.84pt>
 File: figs/wrong/cat_dog_res.jpg Graphic file (type jpg)
 <use figs/wrong/cat_dog_res.jpg>
-Package pdftex.def Info: figs/wrong/cat_dog_res.jpg  used on input line 96.
+Package pdftex.def Info: figs/wrong/cat_dog_res.jpg  used on input line 89.
 (pdftex.def)             Requested size: 72.26999pt x 57.80959pt.
-<figs/wrong/many_dogs_res.jpg, id=136, 642.4pt x 427.5975pt>
+<figs/wrong/many_dogs_res.jpg, id=125, 642.4pt x 427.5975pt>
 File: figs/wrong/many_dogs_res.jpg Graphic file (type jpg)
 <use figs/wrong/many_dogs_res.jpg>
-Package pdftex.def Info: figs/wrong/many_dogs_res.jpg  used on input line 96.
+Package pdftex.def Info: figs/wrong/many_dogs_res.jpg  used on input line 89.
 (pdftex.def)             Requested size: 72.26999pt x 48.09938pt.
-<figs/wrong/three_cat_res.jpg, id=137, 401.5pt x 401.5pt>
+<figs/wrong/three_cat_res.jpg, id=126, 401.5pt x 401.5pt>
 File: figs/wrong/three_cat_res.jpg Graphic file (type jpg)
 <use figs/wrong/three_cat_res.jpg>
-Package pdftex.def Info: figs/wrong/three_cat_res.jpg  used on input line 96.
+Package pdftex.def Info: figs/wrong/three_cat_res.jpg  used on input line 89.
 (pdftex.def)             Requested size: 72.26999pt x 72.26688pt.
-) (./conclusion.tex) (./main.bbl [3 <./figs/TFA_fig2.pdf>]
-Underfull \vbox (badness 4048) has occurred while \output is active []
-
-
-Underfull \vbox (badness 4048) has occurred while \output is active []
-
- [4 <./figs/correct/clock_res.jpg> <./figs/correct/miao_res.jpg> <./figs/correct/2umb_res.jpg> <./figs/partial/bird_res.jpg> <./figs/partial/fruit_res.jpg> <./figs/partial/horse_res.jpg> <./figs/wrong/cat_dog_res.jpg> <./figs/wrong/many_dogs_res.jpg> <./figs/wrong/three_cat_res.jpg>])
+) (./conclusion.tex) (./main.bbl [3 <./figs/TFA_fig2.pdf>] [4 <./figs/correct/clock_res.jpg> <./figs/correct/miao_res.jpg> <./figs/correct/2umb_res.jpg> <./figs/partial/bird_res.jpg> <./figs/partial/fruit_res.jpg> <./figs/partial/horse_res.jpg> <./figs/wrong/cat_dog_res.jpg> <./figs/wrong/many_dogs_res.jpg> <./figs/wrong/three_cat_res.jpg>])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 146.
  [5
 
@@ -684,17 +678,17 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 146.
  ) 
 Here is how much of TeX's memory you used:
  11074 strings out of 480608
- 166452 string characters out of 5907537
- 503618 words of memory out of 5000000
+ 166435 string characters out of 5907537
+ 489620 words of memory out of 5000000
  26419 multiletter control sequences out of 15000+600000
  570198 words of font info for 205 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,13n,57p,742b,468s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,13n,57p,701b,468s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (5 pages, 4771528 bytes).
+Output written on main.pdf (5 pages, 4770209 bytes).
 PDF statistics:
- 263 PDF objects out of 1000 (max. 8388607)
- 191 compressed objects within 2 object streams
+ 254 PDF objects out of 1000 (max. 8388607)
+ 182 compressed objects within 2 object streams
  45 named destinations out of 1000 (max. 500000)
  37432 words of extra memory for PDF output out of 42996 (max. 10000000)
 

@@ -7,7 +7,7 @@ In the prior works, people have tried to achieve few-shot image detection by two
     \item Metric-learning. This approach tries to build some metrics for the learner so that it can estimate and check the similarities between images, e.g. cosine similarities. Based on the built metrics, the model can try to fit to the input and learn how to detect objects. However, this approach relis on the metric, which may be hard to find a better one.
 \end{enumerate}
 
-The object detection task is much harder than the image classification task, since it contains not only classification but also object localization. Researchers ~\cite{kang2019few,yan2019meta,wang2019meta} have attempted to achieve few-shot object detection task, where a few labeled data, far from abundent, is provided to the learner as novel training data. These methods achieved out-of-random performance but their methods are not stable, which means the reproduced results might be far from their reported results.
+The object detection task is much harder than the image classification task, since it contains not only classification but also object localization. Researchers ~\cite{kang2019few,yan2019meta} have attempted to achieve few-shot object detection task, where a few labeled data, far from abundent, is provided to the learner as novel training data. These methods achieved out-of-random performance but their methods are not stable, which means the reproduced results might be far from their reported results.
 
 \begin{figure*}[ht]
     \centering
@@ -19,7 +19,7 @@ The object detection task is much harder than the image classification task, sin
 
 In this project, we try to improve the detection results by adopting fine-tuning based approaches. We focus on the schedule of the training procedure and use proper instance-level feature normalization in this project.
 
-The training is composed of two stages, which is shown in Figure~\ref{fig:tfa_arch}. The first stage trains the whole network, e.g. Faster R-CNN, on data-abundent base classes. Then we only train the last layer of the network in the second stage, on a small balanced training set that is composed of both base and novel classes by properly sample data, parameters in other layers of the detector is kept intact during the second stage. We also use instance-level feature normalization in the second stage, which helps the model to diminish some parameter issues introduced by~\citet{gidaris2018dynamic,qi2018low,chen2019closer}.
+The training is composed of two stages, which is shown in Figure~\ref{fig:tfa_arch}. The first stage trains the whole network, e.g. Faster R-CNN, on data-abundent base classes. Then we only train the last layer of the network in the second stage, on a small balanced training set that is composed of both base and novel classes by properly sample data, parameters in other layers of the detector is kept intact during the second stage. We also use instance-level feature normalization in the second stage, which helps the model to diminish some parameter issues introduced by~\citet{gidaris2018dynamic}.
 
 In our evalution, we find that our method outperfroms all previous few-shot object detection methods, our method can gain 2 $\sim$ 15 percent more accuracy than prior methods, and it even doubled the accuracy in one-shot learning, which dictates the effiction of our method.
 

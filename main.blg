@@ -3,44 +3,53 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: icml2020.bst
 Database file #1: references.bib
+I was expecting a `,' or a `}'---line 411 of file references.bib
+ :     
+ :     booktitle = {International Conference on Machine Learning (ICML)},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty journal in wang2020few
+Warning--empty year in wang2020few
+Warning--empty year in wang2020few
 You've used 13 entries,
             2773 wiz_defined-function locations,
-            655 strings with 7011 characters,
-and the built_in function-call counts, 8392 in all, are:
-= -- 756
-> -- 498
-< -- 13
-+ -- 167
-- -- 153
-* -- 643
-:= -- 1170
-add.period$ -- 39
+            653 strings with 7003 characters,
+and the built_in function-call counts, 8540 in all, are:
+= -- 761
+> -- 525
+< -- 12
++ -- 176
+- -- 162
+* -- 669
+:= -- 1194
+add.period$ -- 38
 call.type$ -- 13
-change.case$ -- 90
+change.case$ -- 93
 chr.to.int$ -- 12
-cite$ -- 26
-duplicate$ -- 405
-empty$ -- 662
-format.name$ -- 172
-if$ -- 1854
+cite$ -- 29
+duplicate$ -- 406
+empty$ -- 663
+format.name$ -- 179
+if$ -- 1877
 int.to.chr$ -- 2
 int.to.str$ -- 1
 missing$ -- 13
-newline$ -- 73
+newline$ -- 72
 num.names$ -- 52
-pop$ -- 211
+pop$ -- 225
 preamble$ -- 1
-purify$ -- 77
+purify$ -- 80
 quote$ -- 0
-skip$ -- 362
+skip$ -- 359
 stack$ -- 0
 substring$ -- 402
-swap$ -- 130
+swap$ -- 129
 text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 143
-warning$ -- 0
+warning$ -- 3
 while$ -- 69
 width$ -- 0
-write$ -- 173
+write$ -- 170
+(There was 1 error message)
